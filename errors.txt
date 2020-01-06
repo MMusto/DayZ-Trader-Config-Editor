@@ -1,0 +1,850 @@
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_MKII_10Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  200   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_IJ70_8Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  200   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassG18Mag 
+
+        Weapon Trader          |            Pistols             | Buy Price =  400   | Sell Price =  150  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  500   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_CZ75_15Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
+        Weapon Trader          |             Rifles             | Buy Price =  150   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_FNX45_15Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: P226_mag 
+
+        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_Mk22_14Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_APS_20Rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  200   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M9_Magazine 
+
+        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M9_15rnd 
+
+        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_Saiga_8Rnd 
+
+        Weapon Trader          |            Shotguns            | Buy Price =  300   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_Saiga_Drum20Rnd 
+
+        Weapon Trader          |            Shotguns            | Buy Price =  600   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  800   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_CZ61_20Rnd 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_UMP_25Rnd 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_MP5_30Rnd 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_MP7_40Rnd 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_Vityaz_30Rnd 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: bizon_magazine 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Massppshbox 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Massppshdrum 
+
+        Weapon Trader          |        Submachine Guns         | Buy Price =  300   | Sell Price =  200  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_STANAG_30RND 
+
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |             Rifles             | Buy Price =  400   | Sell Price =  200  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  500   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_HoneyBadger_30rnd 
+
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  450   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_AKM_30RND 
+
+        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_STG44_30rnd 
+
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_AK74_30RND 
+
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
+        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Scout556mag 
+
+        Weapon Trader          |             Rifles             | Buy Price =  100   | Sell Price =   50  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  200   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassSVTMag 
+
+        Weapon Trader          |             Rifles             | Buy Price =  500   | Sell Price =  200  
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_DesertEagle_9rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  700   | Sell Price =  200  
+        BM Gun Trader          |      Shotguns and Pistols      | Buy Price =  400   | Sell Price =  100  
+      Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =  400   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2AA12_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  800   | Sell Price =  300  
+        BM Gun Trader          |      Shotguns and Pistols      | Buy Price =  500   | Sell Price =  300  
+      Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =  500   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_FAL_20Rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  700   | Sell Price =  300  
+        BM Gun Trader          |         Assault Rifles         | Buy Price =  600   | Sell Price =  300  
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =  600   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Scar_H_Mag 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1000  | Sell Price =  300  
+        BM Gun Trader          |         Assault Rifles         | Buy Price =  700   | Sell Price =  300  
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =  700   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2mk17_mag 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1000  | Sell Price =  300  
+        BM Gun Trader          |         Assault Rifles         | Buy Price =  700   | Sell Price =  300  
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =  700   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mass9x39Palm 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  500   | Sell Price =  200  
+        BM Gun Trader          |         Assault Rifles         | Buy Price =  600   | Sell Price =  200  
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =  600   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: m240_magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  3000  | Sell Price =  1000 
+        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1300  | Sell Price =  1000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1300  | Sell Price =  1000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2MK48_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  1000 
+        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1200  | Sell Price =  600  
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1200  | Sell Price =  600  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M249_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1500  | Sell Price =  500  
+        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2PKM_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2200  | Sell Price =  1000 
+        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1700  | Sell Price =  1000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1700  | Sell Price =  1000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M14_10Rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  500   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M14_20Rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  700   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M14_DMRMAG 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_VSS_10Rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  400   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  400   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_SVD_10RND 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  300   | Sell Price =  100  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  300   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Barret_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: m200_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_AWMreal_5Rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1200  | Sell Price =  300  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2AS50_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1500  | Sell Price =  300  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M107_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M40A3_Magazine 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1000  | Sell Price =  300  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  700   | Sell Price =  300  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  700   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M24A3_5rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1100  | Sell Price =  400  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  800   | Sell Price =  400  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  800   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M82_10rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1500  | Sell Price =  500  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1500  | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_SSG69_5rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  200   | Sell Price =   50  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  100   | Sell Price =   50  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  100   | Sell Price =   50  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_PSG1_20rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mag_M14_20rnd 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: kivaarimag 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  800   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  600   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  600   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Massm300mag 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2500  | Sell Price =  600  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  100  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Mass308STANAG 
+
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2AA12 
+
+        BM Gun Trader          |      Shotguns and Pistols      | Buy Price = 10000  | Sell Price =  3000 
+      Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_DesertEagle 
+
+        BM Gun Trader          |      Shotguns and Pistols      | Buy Price =  1000  | Sell Price =  600  
+      Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =   -1   | Sell Price =  600  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: FAL 
+
+        BM Gun Trader          |         Assault Rifles         | Buy Price = 10000  | Sell Price =  1500 
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =   -1   | Sell Price =  1500 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Scar_H 
+
+        BM Gun Trader          |         Assault Rifles         | Buy Price = 15000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2mk17 
+
+        BM Gun Trader          |         Assault Rifles         | Buy Price = 15000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2mk17_s 
+
+        BM Gun Trader          |         Assault Rifles         | Buy Price = 15000  | Sell Price =  300  
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =   -1   | Sell Price =  300  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassAR15 
+
+        BM Gun Trader          |         Assault Rifles         | Buy Price =  3700  | Sell Price =  1000 
+      Blackmarket Dealer       |         Assault Rifles         | Buy Price =   -1   | Sell Price =  1000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: RPK 
+
+        BM Gun Trader          |       Light Machine Guns       | Buy Price = 20000  | Sell Price =  5000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =   -1   | Sell Price =  5000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M240 
+
+        BM Gun Trader          |       Light Machine Guns       | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2MK48 
+
+        BM Gun Trader          |       Light Machine Guns       | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M249 
+
+        BM Gun Trader          |       Light Machine Guns       | Buy Price = 17000  | Sell Price =  8000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =   -1   | Sell Price =  8000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2PKM 
+
+        BM Gun Trader          |       Light Machine Guns       | Buy Price = 18000  | Sell Price =  9000 
+      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =   -1   | Sell Price =  9000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_M14 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 10000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: M14 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 10000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M14_DMR 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 10000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: M1A 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 10000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: SVD 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  5000  | Sell Price =  1500 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  1500 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WinterGear_SVD 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  5000  | Sell Price =  1500 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  1500 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: VSS 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  8000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Barret 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Barret_Green 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Barret_Tan 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: M200 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: AWMreal 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2WM110_desert 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2WM110_black 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2AS50 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 27000  | Sell Price = 12000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 12000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M107 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M40A3 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M24_Desert 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: A2M24_Green 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_M24A3 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 12000  | Sell Price =  6000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  6000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_M82 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 20000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_SSG69 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  8000  | Sell Price =  3000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  3000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: WE_PSG1 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =  8000  | Sell Price =  1000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  1000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassKivaari 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 25000  | Sell Price = 10000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 10000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Massm300 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 30000  | Sell Price = 15000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 15000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: Massm300_camo 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 30000  | Sell Price = 15000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price = 15000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassM110 
+
+        BM Gun Trader          |         Sniper Rifles          | Buy Price = 15000  | Sell Price =  7000 
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =   -1   | Sell Price =  7000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassHeavyPlateVest_ODG 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 10000  | Sell Price =  4000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  4000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassHeavyPlateVest_Winter 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 10000  | Sell Price =  4000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  4000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassHeavyPlateVest_Black 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 10000  | Sell Price =  4000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  4000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassHeavyPlateVest_PartizanM 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 10000  | Sell Price =  4000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  4000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassHeavyPlateVest_Beige 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 10000  | Sell Price =  4000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  4000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassRatnik 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 15000  | Sell Price =  6000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  6000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassRatnik_Black 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 15000  | Sell Price =  6000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  6000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassRatnik_Tan 
+
+      BM Clothing Trader       |             Armour             | Buy Price = 15000  | Sell Price =  6000 
+      Blackmarket Dealer       |             Armour             | Buy Price =   -1   | Sell Price =  6000 
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieAtt_Mossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieAtt_Tan 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieAtt_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieHood_Mossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieHood_Tan 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieHood_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieBushrag_Mossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2000  | Sell Price =  200  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieBushrag_Tan 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2000  | Sell Price =  200  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieBushrag_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2000  | Sell Price =  200  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  200  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieTop_Mossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2300  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieTop_Tan 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2300  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieTop_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2300  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieSuit_Mossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3500  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieSuit_Tan 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3500  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: GhillieSuit_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3500  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitWoodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3500  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitMossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3500  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitSnow 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3600  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieTopWoodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2300  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieTopMossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2300  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieTopSnow 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  2400  | Sell Price =  400  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  400  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieHood_Woodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieHood_Snowy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieHoodMossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitBoxWoodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  4800  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitBoxMossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  4800  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieSuitBoxWinter 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  4800  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieTopBoxWoodland 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3600  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassGhillieTopBoxMossy 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  3600  | Sell Price =  500  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  500  
+-----------------------------------------------------------------------------------------------------------
+
+[!] Inconsistent Price Error: MassWinterGhillieWrap 
+
+      BM Clothing Trader       |            Ghillie             | Buy Price =  1200  | Sell Price =  100  
+      Blackmarket Dealer       |            Ghillie             | Buy Price =   -1   | Sell Price =  100  

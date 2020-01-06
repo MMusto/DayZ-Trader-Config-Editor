@@ -1,0 +1,2462 @@
+        //Eden's Trader.txt formatter/error-checker
+        //Commented lines will not be processed ( lines w/ '//' )
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //                                                                                                                //
+        //      If you have any Problems with Configurations here feel free to contact me on Discord: Dr_J0nes#3734       //
+        //                                                                                                                //
+        //      Only Singleline Comments work. Don't use Multiline Comments!                                              //
+        //      /* THIS COMMENT WILL CRASH THE SERVER! */                                                                 //
+        //      // THIS COMMENT WORKS!                                                                                    //
+        //                                                                                                                //
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<CurrencyName> #tm_ruble							// Currency Name (Only used for the Text in the upper right Corner of the Trader Menu)
+	<Currency> MoneyRuble1, 	1					// Currency Classname, Currency Money Value
+	<Currency> MoneyRuble5, 	5
+	<Currency> MoneyRuble10, 	10
+	<Currency> MoneyRuble25, 	25
+	<Currency> MoneyRuble50, 	50
+	<Currency> MoneyRuble100, 	100
+-edit- //done - Justin
+<Trader> Consume Trader								// Trader Name (first Trader has ID = 0, second Trader has ID = 1, and so on..)
+	<Category> Vegetables							// Category Name
+		Apple,					*,		50,		-1	// Item Classname, Quantity, Buyvalue, Sellvalue
+		GreenBellPepper                         ,*  ,50        ,-1        
+		Pear                                    ,*  ,50        ,-1        
+		Plum                                    ,*  ,50        ,-1        
+		Potato                                  ,*  ,50        ,-1        
+		Tomato                                  ,*  ,50        ,-1        
+		Zucchini                                ,*  ,100       ,-1        
+		Pumpkin                                 ,*  ,100       ,-1        
+		CaninaBerry                             ,*  ,50        ,-1        
+		SambucusBerry                           ,*  ,50        ,-1        
+		AgaricusMushroom                        ,*  ,100       ,-1        
+		AmanitaMushroom                         ,*  ,100       ,-1        
+		LactariusMushroom                       ,*  ,100       ,-1        
+		MacrolepiotaMushroom                    ,*  ,100       ,-1        
+		PsilocybeMushroom                       ,*  ,100       ,-1        
+		AuriculariaMushroom                     ,*  ,100       ,-1        
+		BoletusMushroom                         ,*  ,100       ,-1        
+		PleurotusMushroom                       ,*  ,100       ,-1        
+	
+	<Category> Packaged Food
+		PowderedMilk                            ,*  ,50        ,-1        
+		BoxCerealCrunchin                       ,*  ,100       ,-1        
+		Rice                                    ,*  ,100       ,-1        
+		Marmalade                               ,*  ,100       ,-1        
+		PeachesCan                              ,*  ,100       ,-1        
+		SardinesCan                             ,*  ,100       ,-1        
+		TunaCan                                 ,*  ,100       ,-1        
+		SpaghettiCan                            ,*  ,150       ,-1        
+		BakedBeansCan                           ,*  ,150       ,-1        
+		TacticalBaconCan                        ,*  ,150       ,-1        
+		
+	<Category> Drinks
+		SodaCan_Cola                            ,*  ,50        ,-1        
+		SodaCan_Kvass                           ,*  ,50        ,-1        
+		SodaCan_Pipsi                           ,*  ,50        ,-1        
+		SodaCan_Spite                           ,*  ,50        ,-1        
+		WaterBottle                             ,*  ,50        ,-1        
+		Canteen                                 ,*  ,100       ,-1        
+		
+	<Category> Medical Supplies
+		Blood and Health will not replenish     ,W  ,-1        ,-1        
+		inside the safezone!!!                  ,W  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		//Rag,					1,		1,		-1
+		BandageDressing                         ,*  ,50        ,-1        
+		BloodTestKit                            ,*  ,50        ,-1        
+		//InjectionVial,		*,		5, 		-1
+		//Thermometer,			*,		50,		-1
+		DisinfectantSpray                       ,*  ,50        ,-1        
+		//Syringe,				*,		8, 		-1
+		StartKitIV                              ,*  ,50        ,-1        
+		SalineBag                               ,*  ,200       ,-1        
+		BloodBagEmpty                           ,*  ,50        ,-1        
+		FirstAidKit                             ,*  ,150       ,-1        
+		//Defibrillator,		*,		35, 	-1
+		
+		#x9                                     ,W  ,-1        ,-1        
+		SalineBagIV                             ,*  ,300       ,8         
+		Will replenish blood and health         ,W  ,-1        ,-1        
+		
+	<Category> Medications
+		CharcoalTablets                         ,*  ,50        ,-1        
+		DisinfectantAlcohol                     ,*  ,50        ,-1        
+		VitaminBottle                           ,*  ,50        ,-1        
+		TetracyclineAntibiotics                 ,*  ,50        ,-1        
+		PainkillerTablets                       ,*  ,50        ,-1        
+		Epinephrine                             ,*  ,50        ,-1        
+		Morphine                                ,*  ,100       ,-1        
+		
+	<Category> Money Exchange
+		MoneyRuble1                             ,1  ,1         ,-1        
+		MoneyRuble5                             ,1  ,5         ,-1        
+		MoneyRuble10                            ,1  ,10        ,-1        
+		MoneyRuble25                            ,1  ,25        ,-1        
+		MoneyRuble50                            ,1  ,50        ,-1        
+		MoneyRuble100                           ,1  ,100       ,-1        
+
+
+
+-edit- //done -justin
+<Trader> Misc Trader
+	<Category> Tools (small)
+		Screwdriver                             ,*  ,50        ,-1        
+		Wrench                                  ,*  ,50        ,10        
+		SewingKit                               ,*  ,100       ,25        
+		Pliers                                  ,*  ,100       ,25        
+		LeatherSewingKit                        ,*  ,200       ,50        
+		Whetstone                               ,*  ,200       ,50        
+		Hammer                                  ,*  ,100       ,25        
+		Hacksaw                                 ,*  ,2000      ,-1        
+		HandSaw                                 ,*  ,100       ,25        
+		WeaponCleaningKit                       ,*  ,200       ,50        
+		Compass                                 ,*  ,10        ,-1        
+		OrienteeringCompass                     ,*  ,10        ,-1        
+		KitchenKnife                            ,*  ,50        ,10        
+		SteakKnife                              ,*  ,50        ,10        
+		ChernarusMap                            ,*  ,50        ,10        
+		Binoculars                              ,*  ,100       ,25        
+		HuntingKnife                            ,*  ,100       ,50        
+		CanOpener                               ,*  ,100       ,50        
+		CombatKnife                             ,*  ,100       ,50        
+		Hatchet                                 ,*  ,300       ,100       
+		Lockpick                                ,*  ,300       ,50        
+		
+	<Category> Tools (big)
+		LugWrench                               ,*  ,100       ,50        
+		Crowbar                                 ,*  ,100       ,50        
+		Shovel                                  ,*  ,200       ,100       
+		Pickaxe                                 ,*  ,100       ,50        
+		WoodAxe                                 ,*  ,200       ,100       
+		FirefighterAxe                          ,*  ,300       ,100       
+		
+	<Category> Electronics
+		Battery9V                               ,*  ,50        ,10        
+		PersonalRadio                           ,*  ,100       ,10        
+		Megaphone                               ,*  ,2000      ,100       
+		ElectronicRepairKit                     ,*  ,50        ,10        
+		CableReel                               ,*  ,100       ,25        
+		BatteryCharger                          ,*  ,100       ,25        
+		BaseRadio                               ,*  ,100       ,25        
+		Rangefinder                             ,*  ,200       ,25        
+		NVGoggles                               ,*  ,2500      ,750       
+	
+	<Category> Fire & Lights
+		Chemlight_Blue                          ,*  ,10        ,-1        
+		Chemlight_Green                         ,*  ,10        ,-1        
+		Chemlight_Red                           ,*  ,10        ,-1        
+		Chemlight_White                         ,*  ,10        ,-1        
+		Chemlight_Yellow                        ,*  ,10        ,-1        
+		Roadflare                               ,*  ,50        ,-1        
+		Matchbox                                ,*  ,100       ,-1        
+		Heatpack                                ,*  ,50        ,-1        
+		Flashlight                              ,*  ,50        ,-1        
+		PortableGasLamp                         ,*  ,50        ,-1        
+		PortableGasStove                        ,*  ,50        ,-1        
+		Headtorch_Black                         ,*  ,50        ,-1        
+		Headtorch_Grey                          ,*  ,50        ,-1        
+		Spotlight                               ,*  ,200       ,100       
+	
+	<Category> Cooking & Hunting Supplies
+		PurificationTablets                     ,*  ,50        ,-1        
+		Pot                                     ,M  ,50        ,10        
+		Tripod                                  ,*  ,50        ,10        
+		BearTrap                                ,*  ,200       ,50        
+	
+	<Category> Hardware Supplies
+		//Paper,					*,		100,		-1
+		//Pen_Blue,				*,		200,		-1
+		Rope                                    ,*  ,100       ,50        
+		TannedLeather                           ,*  ,50        ,-1        
+		AntiPestsSpray                          ,*  ,50        ,-1        
+		MetalWire                               ,*  ,1000      ,500       
+		EpoxyPutty                              ,*  ,200       ,50        
+		DuctTape                                ,*  ,500       ,200       
+		XmasLights                              ,*  ,100       ,25        
+		HandcuffKeys                            ,*  ,50        ,25        
+		Handcuffs                               ,*  ,50        ,25        
+		Netting                                 ,1  ,100       ,25        
+		BurlapSack                              ,*  ,300       ,100       
+		//WoodenPlank,			10,		50,		15
+		//MetalPlate,				*,		60,		18
+		SmallProtectorCase                      ,*  ,100       ,25        
+		AmmoBox                                 ,*  ,200       ,50        
+		SmallGasCanister                        ,*  ,100       ,35        
+		MediumGasCanister                       ,*  ,150       ,50        
+		LargeGasCanister                        ,*  ,200       ,50        
+		CanisterGasoline                        ,*  ,300       ,50        
+		NailBox                                 ,*  ,300       ,50        
+		BarbedWire                              ,*  ,450       ,100       
+		Camonet                                 ,*  ,600       ,250       
+		//HescoBox,				*,		650,	250
+		CombinationLock                         ,*  ,1000      ,400       
+		BarrelHoles_Blue                        ,*  ,2000      ,500       
+		BarrelHoles_Green                       ,*  ,2000      ,500       
+		BarrelHoles_Red                         ,*  ,2000      ,500       
+		BarrelHoles_Yellow                      ,*  ,2000      ,500       
+		Barrel_Blue                             ,M  ,1500      ,350       
+		Barrel_Green                            ,M  ,1500      ,350       
+		Barrel_Red                              ,M  ,1500      ,350       
+		Barrel_Yellow                           ,M  ,1500      ,350       
+		SeaChest                                ,*  ,1000      ,300       
+		PowerGenerator                          ,*  ,3000      ,1000      
+	
+	<Category> Seeds & Lime
+		TomatoSeedsPack                         ,*  ,50        ,-1        
+		PepperSeedsPack                         ,*  ,50        ,-1        
+		ZucchiniSeedsPack                       ,*  ,50        ,-1        
+		PumpkinSeedsPack                        ,*  ,50        ,-1        
+		GardenLime                              ,*  ,50        ,-1        
+		
+	<Category> Fluffy Pets <3
+		Bear_Beige                              ,*  ,100       ,50        
+		Bear_Dark                               ,*  ,100       ,50        
+		Bear_Pink                               ,*  ,100       ,50        
+		Bear_White                              ,*  ,100       ,50        
+
+
+
+	-edit- //done - justin
+	<Category> Storage and locks
+		#x9                                     ,W  ,-1        ,-1        
+		You can codelock the following tents.   ,W  ,-1        ,-1        
+		Codelock                                ,*  ,10000     ,4000      
+		MediumTent                              ,*  ,2000      ,800       
+		LargeTent                               ,*  ,3000      ,1000      
+		CarTent                                 ,*  ,3000      ,1000      
+		
+		#x9                                     ,W  ,-1        ,-1        
+		You cannot codelock these tents !       ,W  ,-1        ,-1        
+		OP_impTent                              ,*  ,500       ,200       
+		OP_Tentbase                             ,*  ,1000      ,300       
+		OP_Tentbase2                            ,*  ,1000      ,300       
+		OP_Tentbase3                            ,*  ,1000      ,300       
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Can only lock with dial and padlocks !  ,W  ,-1        ,-1        
+		OPLock                                  ,*  ,2000      ,400       
+		CombinationLock                         ,*  ,1000      ,400       
+		Skyline_Kit_Fridge                      ,*  ,500       ,200       
+		OP_Lockerblue                           ,*  ,1000      ,300       
+		Locker                                  ,*  ,1200      ,400       
+		Skyline_Kit_Shelf                       ,*  ,1500      ,600       
+		OP_StorageCabinetSmall                  ,*  ,2000      ,500       
+		OP_StorageCabinetGrey                   ,*  ,2500      ,600       
+		OP_StorageCabinetBlack                  ,*  ,2500      ,600       
+		OP_StorageCabinetGreen                  ,*  ,2500      ,600       
+		Skyline_Kit_StorageBox                  ,*  ,3500      ,700       
+		Skyline_Kit_Gun_Cabinet                 ,*  ,4000      ,800       
+		Skyline_Kit_Gun_Rack                    ,*  ,6000      ,1500      
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Tags you can put inside the storage box ,W  ,-1        ,-1        
+		To display a sign!                      ,W  ,-1        ,-1        
+		Skyline_Storagebox_Tag_Weapons          ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Medical          ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Ammo             ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Clothing         ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Component        ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Construction     ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Magazine         ,*  ,20        ,-1        
+		Skyline_Storagebox_Tag_Tools            ,*  ,20        ,-1        
+
+
+
+		-edit- MAGS AND AMMO(ammo is single,mags is empty) 
+ //done. -justin Removed selling of single ammo
+<Trader> Weapon Trader
+
+
+	<Category> Melee	
+		Spear                                   ,W  ,500       ,10        
+
+		Machete                                 ,W  ,15        ,6         
+		
+		SledgeHammer                            ,W  ,15        ,6         
+		
+		stoneknife                              ,W  ,15        ,6         
+
+		BrassKnuckles_Shiny                     ,W  ,15        ,6         
+		
+		
+		StunBaton                               ,W  ,15        ,9         
+		
+		
+		Pipe                                    ,W  ,25        ,10        
+		
+		
+		CattleProd                              ,W  ,25        ,15        
+		
+		
+		BaseballBat                             ,W  ,35        ,17        
+		
+		
+		NailedBaseballBat                       ,W  ,45        ,20        
+		
+		
+		WE_Katana                               ,W  ,1200      ,1000      
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		
+	<Category> Pistols
+		MKII                                    ,W  ,350       ,150       
+		Mag_MKII_10Rnd                          ,M  ,150       ,50        
+		Ammo_22                                 ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+		MakarovIJ70                             ,W  ,350       ,100       
+		Mag_IJ70_8Rnd                           ,M  ,150       ,50        
+		Ammo_380                                ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Glock19                                 ,W  ,500       ,250       
+		Mag_Glock_15Rnd                         ,M  ,100       ,50        
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassG18                                 ,W  ,1000      ,450       
+		MassG18_Green                           ,W  ,1000      ,450       
+		MassG18Mag                              ,M  ,400       ,150       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+				
+		CZ75                                    ,W  ,450       ,200       
+		Mag_CZ75_15Rnd                          ,M  ,150       ,50        
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		FNX45                                   ,W  ,450       ,200       
+		Mag_FNX45_15Rnd                         ,M  ,150       ,50        
+		Ammo_45ACP                              ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		P226                                    ,W  ,650       ,350       
+		P226_mag                                ,M  ,250       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Mk22                                    ,W  ,650       ,350       
+		Mag_Mk22_14Rnd                          ,M  ,250       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		StechkinAPS                             ,W  ,800       ,450       
+		APS_Buttstock                           ,W  ,100       ,50        
+		Mag_APS_20Rnd                           ,M  ,200       ,50        
+		Ammo_380                                ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M9                                    ,W  ,650       ,350       
+		A2M9_Magazine                           ,M  ,250       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M9                                   ,W  ,650       ,350       
+		Mag_M9_15rnd                            ,M  ,250       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Colt1911                                ,W  ,650       ,350       
+		Engraved1911                            ,W  ,750       ,450       
+		Mag_1911_7rnd                           ,M  ,200       ,50        
+		Ammo_45ACP                              ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		
+		
+		
+		
+	<Category> Shotguns
+		Izh43shotgun                            ,W  ,1350      ,550       
+		SawedoffIzh43shotgun                    ,W  ,1000      ,500       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Mp133Shotgun                            ,W  ,1400      ,575       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassMP153                               ,W  ,1400      ,575       
+		MassMP153Short                          ,W  ,1300      ,550       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassStevens301                          ,W  ,1500      ,550       
+		MassStevens301SHORT                     ,W  ,1450      ,525       
+		MassStevens301SuperShort                ,W  ,1400      ,500       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Massarmsan                              ,W  ,1700      ,700       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Saiga                                   ,W  ,1900      ,800       
+		Mag_Saiga_8Rnd                          ,M  ,300       ,100       
+		Mag_Saiga_Drum20Rnd                     ,M  ,600       ,100       
+		Ammo_12gaPellets                        ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		
+	<Category> Submachine Guns
+		CZ61                                    ,W  ,1350      ,550       
+		Mag_CZ61_20Rnd                          ,M  ,200       ,100       
+		Ammo_380                                ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		UMP45                                   ,W  ,1500      ,550       
+		WinterGear_UMP                          ,W  ,1600      ,650       
+		Mag_UMP_25Rnd                           ,M  ,200       ,100       
+		Ammo_45ACP                              ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MP5K                                    ,W  ,1400      ,550       
+		Mag_MP5_30Rnd                           ,M  ,200       ,100       
+		Ammo_9x19                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MP7                                     ,W  ,1600      ,550       
+		Mag_MP7_40Rnd                           ,M  ,200       ,100       
+		Ammo_46x30                              ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		VityazSN                                ,W  ,1500      ,650       
+		Mag_Vityaz_30Rnd                        ,M  ,200       ,100       
+		Ammo_9x19                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2bizon                                 ,W  ,1600      ,1000      
+		bizon_magazine                          ,M  ,200       ,100       
+		Ammo_9x19                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassPPSH41                              ,W  ,1600      ,1000      
+		MassPPSH41_Black                        ,W  ,1650      ,1000      
+		Massppshbox                             ,M  ,200       ,100       
+		Massppshdrum                            ,M  ,300       ,200       
+		Ammo_9x19                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_MP5SD                                ,W  ,1700      ,1000      
+		Mag_MP5_30Rnd                           ,M  ,200       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_MAT49                                ,W  ,1300      ,1000      
+		Mag_MAT49_20rnd                         ,M  ,300       ,100       
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> Nato Assault Rifles 
+
+		
+		M4A1                                    ,W  ,4000      ,750       
+		WinterGear_M4                           ,W  ,4250      ,750       
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		HK416                                   ,W  ,3500      ,1000      
+		Mag_STANAG_30RND                        ,W  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M16                                     ,W  ,3500      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		SCAR                                    ,W  ,3700      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M16A4                                 ,W  ,3000      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		A2G36_C                                 ,W  ,3500      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2MK16                                  ,W  ,3500      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		WE_AR15                                 ,W  ,3000      ,1000      
+		Mag_AR15_30rnd                          ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_HoneyBadger                          ,W  ,4000      ,1000      
+		Mag_HoneyBadger_30rnd                   ,M  ,450       ,100       
+		Ammo_300                                ,1  ,10        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_ACR                                  ,W  ,3500      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M16A3                                ,W  ,3000      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		MassM16                                 ,W  ,3000      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassB52                                 ,W  ,3700      ,1000      
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		<Category> DDSV Assault Rifles 
+		
+		AKM                                     ,W  ,4000      ,750       
+		WinterGear_AKM                          ,W  ,4250      ,750       
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2AK74S                                 ,W  ,3900      ,1000      
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_RK92                                 ,W  ,3800      ,1000      
+		Mag_RK92_30rnd                          ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_STG44                                ,W  ,3700      ,1000      
+		Mag_STG44_30rnd                         ,M  ,300       ,100       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		AKS74U                                  ,W  ,3000      ,1000      
+		Mag_AK74_30RND                          ,M  ,300       ,100       
+		Ammo_545x39                             ,1  ,100       ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		AK74                                    ,W  ,3500      ,1000      
+		Mag_AK74_30RND                          ,M  ,300       ,100       
+		Ammo_545x39                             ,1  ,100       ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		AK101                                   ,W  ,3500      ,1000      
+		Mag_AK101_30RND                         ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassPpskn                               ,W  ,3700      ,1000      
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassType81                              ,W  ,3600      ,1000      
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2AKSGOLD                               ,W  ,9000      ,1000      
+		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		
+	<Category> Rifles
+		Mosin9130                               ,W  ,4000      ,1500      
+		WinterGear_Mosin                        ,W  ,4100      ,1600      
+		SawedoffMosin9130                       ,W  ,3800      ,1400      
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		CZ527                                   ,W  ,3500      ,1250      
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+		MassM19_Wood                            ,W  ,2500      ,500       
+		MassM19                                 ,W  ,2600      ,600       
+		Mag_CZ75_15Rnd                          ,M  ,150       ,50        
+		Ammo_9x19                               ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Massmini14                              ,W  ,2900      ,1000      
+		Mag_STANAG_30RND                        ,M  ,400       ,200       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassScout556                            ,W  ,2800      ,1000      
+		Scout556mag                             ,W  ,100       ,50        
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassSVT40                               ,W  ,4000      ,1000      
+		MassSVT40_Black                         ,W  ,4100      ,1100      
+		MassSVTMag                              ,M  ,500       ,200       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		SKS                                     ,W  ,3000      ,900       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Izh18                                   ,W  ,500       ,150       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Winchester70                            ,W  ,4000      ,1500      
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		B95                                     ,W  ,4000      ,850       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+
+
+		
+		
+-edit- ONLY THE AMMO AND MAGS, ATTACHMENTS DONE //done -justin
+		
+<Trader> Ammo and Attachments
+		
+		---
+	
+		
+	<Category> Prefilled Magazines
+		#x9                                     ,W  ,-1        ,-1        
+		Pistols                                 ,W  ,-1        ,-1        
+		Mag_MKII_10Rnd                          ,*  ,200       ,50        
+		Mag_IJ70_8Rnd                           ,*  ,200       ,50        
+		Mag_Glock_15Rnd                         ,*  ,100       ,50        
+		MassG18Mag                              ,*  ,500       ,100       
+		Mag_CZ75_15Rnd                          ,*  ,300       ,50        
+		Mag_FNX45_15Rnd                         ,*  ,300       ,50        
+		P226_mag                                ,*  ,300       ,50        
+		Mag_Mk22_14Rnd                          ,*  ,300       ,50        
+		Mag_APS_20Rnd                           ,*  ,300       ,50        
+		A2M9_Magazine                           ,*  ,300       ,50        
+		Mag_M9_15rnd                            ,*  ,300       ,50        
+		Mag_1911_7rnd                           ,*  ,200       ,50        
+		Mag_DesertEagle_9rnd                    ,*  ,700       ,200       
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Shotguns                                ,W  ,-1        ,-1        
+		A2AA12_Magazine                         ,*  ,800       ,300       
+		Mag_Saiga_8Rnd                          ,*  ,400       ,100       
+		Mag_Saiga_Drum20Rnd                     ,*  ,800       ,100       
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Submachine Guns                         ,W  ,-1        ,-1        
+		Mag_CZ61_20Rnd                          ,*  ,300       ,100       
+		Mag_UMP_25Rnd                           ,*  ,300       ,100       
+		Mag_MP5_30Rnd                           ,*  ,300       ,100       
+		Mag_MP7_40Rnd                           ,*  ,400       ,100       
+		Mag_Vityaz_30Rnd                        ,*  ,300       ,100       
+		bizon_magazine                          ,*  ,300       ,100       
+		Massppshbox                             ,W  ,300       ,100       
+		Massppshdrum                            ,W  ,400       ,200       
+		Mag_MP5_30Rnd                           ,*  ,300       ,100       
+		Mag_MAT49_20rnd                         ,*  ,300       ,100       
+
+		#x9                                     ,W  ,-1        ,-1        
+		Assault Rifles                          ,W  ,-1        ,-1        
+		Mag_FAL_20Rnd                           ,*  ,700       ,300       
+		Mag_STANAG_30RND                        ,*  ,500       ,200       
+		Mag_STANAGCoupled_30RND                 ,*  ,1000      ,300       
+		Mag_CMAG_10Rnd_Black                    ,*  ,1500      ,500       
+		Scar_H_Mag                              ,*  ,1000      ,300       
+		A2mk17_mag                              ,*  ,1000      ,300       
+		Mag_AR15_30rnd                          ,*  ,400       ,200       
+		Mag_HoneyBadger_30rnd                   ,*  ,600       ,200       
+		Mass9x39Palm                            ,W  ,500       ,200       
+		
+		Mag_AKM_30RND                           ,*  ,600       ,200       
+		Mag_AKM_Drum75RND                       ,*  ,1200      ,400       
+		Mag_AK74_30RND                          ,*  ,400       ,200       
+		Mag_AK101_30RND                         ,*  ,400       ,200       
+		Mag_STG44_30rnd                         ,*  ,400       ,100       
+		
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Lightmachine Guns                       ,W  ,-1        ,-1        
+		RPK_magazine                            ,*  ,1000      ,400       
+		m240_magazine                           ,*  ,3000      ,1000      
+		A2MK48_Magazine                         ,*  ,2000      ,1000      
+		A2M249_Magazine                         ,*  ,1500      ,500       
+		A2PKM_Magazine                          ,*  ,2200      ,1000      
+		
+		
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Rifles                                  ,W  ,-1        ,-1        
+		Mag_CZ527_5rnd                          ,*  ,200       ,30        
+		Mag_M14_10Rnd                           ,*  ,500       ,200       
+		Mag_M14_20Rnd                           ,*  ,700       ,200       
+		A2M14_DMRMAG                            ,*  ,600       ,200       
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Snipers                                 ,W  ,-1        ,-1        
+		Mag_VSS_10Rnd                           ,*  ,300       ,200       
+		Mag_SVD_10RND                           ,*  ,400       ,100       
+		Barret_Magazine                         ,*  ,2000      ,400       
+		m200_Magazine                           ,*  ,2000      ,400       
+		Mag_AWMreal_5Rnd                        ,*  ,1200      ,300       
+		A2AS50_Magazine                         ,*  ,1500      ,300       
+		A2M107_Magazine                         ,*  ,2000      ,400       
+		A2M40A3_Magazine                        ,*  ,1000      ,300       
+		//A2LRRAWM_Magazine,          *,      1000,     1000
+		Mag_M24A3_5rnd                          ,*  ,1100      ,400       
+		Mag_M82_10rnd                           ,*  ,2000      ,400       
+		Mag_SSG69_5rnd                          ,*  ,200       ,50        
+		Mag_PSG1_20rnd                          ,*  ,600       ,200       
+		Mag_M14_20rnd                           ,*  ,600       ,200       
+		kivaarimag                              ,*  ,800       ,200       
+		Massm300mag                             ,*  ,2500      ,600       
+		MassSVTMag                              ,*  ,600       ,200       
+		Mass308STANAG                           ,*  ,600       ,200       
+		Scout556mag                             ,*  ,200       ,50        
+		---
+		// When changing Prices here keep in Mind that Players
+		// can just unpack the Ammoboxes and sell the Ammo seperatly!
+        //                  - I removed selling single ammo from weapon trader - justin
+		// Originally the Ammoboxes buying Price is 20% less than
+		// buying single Ammo. The Selling Price is the same as
+		// selling the Ammo seperately.
+		<Category> AmmoBoxes
+		AmmoBox_380_35rnd                       ,*  ,100       ,50        
+		AmmoBox_9x19_25rnd                      ,*  ,100       ,50        
+		AmmoBox_45ACP_25rnd                     ,*  ,100       ,50        
+		AmmoBox_22_50rnd                        ,*  ,100       ,50        
+		AmmoBox_46x30_25rnd                     ,*  ,100       ,50        
+		AmmoBox_50AE_30rnd                      ,*  ,100       ,50        
+		
+		AmmoBox_00buck_10rnd                    ,*  ,100       ,50        
+		AmmoBox_12gaSlug_10Rnd                  ,*  ,100       ,50        
+		AmmoBox_12gaBB                          ,*  ,100       ,50        
+		
+		AmmoBox_9x39_20Rnd                      ,*  ,100       ,20        
+		AmmoBox_9x39AP_20Rnd                    ,*  ,500       ,200       
+		AmmoBox_308Win_20Rnd                    ,*  ,400       ,100       
+		AmmoBox_556x45_20Rnd                    ,*  ,150       ,50        
+		AmmoBox_762x39_20Rnd                    ,*  ,200       ,50        
+		AmmoBox_762x54_20Rnd                    ,*  ,400       ,100       
+		AmmoBox_792x33_20Rnd                    ,*  ,200       ,50        
+		
+		AmmoBox_300_20rnd                       ,*  ,200       ,50        
+		AmmoBox_357_20Rnd                       ,*  ,100       ,50        
+		AmmoBox_50Cal                           ,*  ,700       ,250       
+		AmmoBox_408_20rnd                       ,*  ,700       ,250       
+		AmmoBox_408Chey                         ,*  ,1000      ,300       
+		AmmoBox_338_15rnd                       ,*  ,400       ,100       
+		
+	<Category> Optics
+		1x Sights                               ,W  ,-1        ,-1        
+		FNP45_MRDSOptic                         ,*  ,250       ,100       
+		Massholo                                ,*  ,650       ,60        
+		Massholo2                               ,*  ,650       ,60        
+		M68Optic                                ,*  ,500       ,200       
+		M4_T3NRDSOptic                          ,*  ,500       ,200       
+		KobraOptic                              ,*  ,600       ,250       
+		WE_OKP7OpticWest                        ,*  ,100       ,50        
+		WE_OKP7OpticEast                        ,*  ,100       ,50        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		1x-4x Sights                            ,W  ,-1        ,-1        
+		ACOGOptic                               ,*  ,500       ,120       
+		WE_HAMROptic                            ,*  ,500       ,50        
+		WE_PN23Optic                            ,*  ,1000      ,50        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Sniper Scopes                           ,W  ,-1        ,-1        
+		PUScopeOptic                            ,*  ,900       ,500       
+		HuntingOptic                            ,*  ,1000      ,550       
+		DMRScope                                ,*  ,1200      ,600       
+		LRRScope                                ,*  ,1200      ,600       
+		SniperOptic                             ,*  ,1200      ,50        
+		PSO1Optic                               ,*  ,500       ,200       
+		PSO11Optic                              ,*  ,500       ,200       
+		KazuarOptic                             ,*  ,2200      ,600       
+		MassScope                               ,*  ,1000      ,400       
+		WE_HMOptic                              ,*  ,1200      ,400       
+		MassTestScope                           ,*  ,700       ,200       
+		
+		
+	<Category> Handguards
+		MP5_PlasticHndgrd                       ,*  ,100       ,50        
+		MP5_RailHndgrd                          ,*  ,150       ,75        
+		AK_WoodHndgrd                           ,*  ,200       ,100       
+		AK74_Hndgrd                             ,*  ,200       ,100       
+		AK_WoodHndgrd_Black                     ,*  ,200       ,100       
+		AK_WoodHndgrd_camo                      ,*  ,200       ,100       
+		AK_RailHndgrd                           ,*  ,200       ,100       
+		AK_RailHndgrd_Green                     ,*  ,200       ,100       
+		AK_PlasticHndgrd                        ,*  ,200       ,100       
+		M4_PlasticHndgrd                        ,*  ,150       ,75        
+		M4_PlasticHndgrd_Green                  ,*  ,150       ,75        
+		M4_RISHndgrd                            ,*  ,200       ,100       
+		M4_RISHndgrd_Green                      ,*  ,200       ,100       
+		M4_MpHndgrd                             ,*  ,200       ,100       
+		M4_MpHndgrd_Green                       ,*  ,200       ,100       
+		M249_Hndgrd                             ,*  ,200       ,100       
+		M249_RisHndgrd                          ,*  ,200       ,100       
+	
+		
+	<Category> Buttstocks
+		MassStockPouch                          ,*  ,300       ,50        
+		APS_Buttstock                           ,*  ,100       ,50        
+		MP5k_StockBttstck                       ,*  ,100       ,50        
+		Saiga_Bttstck                           ,*  ,150       ,75        
+		AK_PlasticBttstck                       ,*  ,100       ,50        
+		AK_PlasticBttstck_Green                 ,*  ,100       ,50        
+		AK_WoodBttstck                          ,*  ,150       ,75        
+		AK74_WoodBttstck                        ,*  ,150       ,75        
+		AK_WoodBttstck_Black                    ,*  ,150       ,75        
+		AK74_WoodBttstck_Black                  ,*  ,150       ,75        
+		AK_WoodBttstck_Camo                     ,*  ,150       ,75        
+		AK74_WoodBttstck_camo                   ,*  ,150       ,75        
+		AK_FoldingBttstck                       ,*  ,250       ,125       
+		AKS74U_Bttstck                          ,*  ,150       ,75        
+		AKS74U_Bttstck_green                    ,*  ,150       ,75        
+		M4_OEBttstck                            ,*  ,150       ,75        
+		M4_OEBttstck_Green                      ,*  ,150       ,75        
+		M4_MPBttstck                            ,*  ,150       ,75        
+		M4_MPBttstck_Green                      ,*  ,150       ,75        
+		M4_CQBBttstck                           ,*  ,150       ,75        
+		M4_CQBBttstck_Green                     ,*  ,150       ,75        
+		Fal_OeBttstck                           ,*  ,100       ,50        
+		Fal_FoldingBttstck                      ,*  ,150       ,75        
+		
+	<Category> Bayonets
+		Mosin_Bayonet                           ,*  ,100       ,60        
+		Kar98_Bayonet                           ,*  ,100       ,50        
+		M9A1_Bayonet                            ,*  ,150       ,75        
+		AK_Bayonet                              ,*  ,150       ,75        
+		SKS_Bayonet                             ,*  ,100       ,60        
+	
+		
+	<Category> Compensators
+		Mosin_Compensator                       ,*  ,350       ,125       
+		MP5_Compensator                         ,*  ,200       ,100       
+		MassMuzzle338                           ,*  ,750       ,300       
+		MassMuzzle556                           ,*  ,400       ,100       
+		MassMuzzle762                           ,*  ,400       ,100       
+		MassMuzzlePistol                        ,*  ,200       ,100       
+		
+	<Category> Supressors
+		PistolSuppressor                        ,*  ,150       ,75        
+		AK_Suppressor                           ,*  ,3000      ,600       
+		M4_Suppressor                           ,*  ,3000      ,600       
+		--
+		ImprovisedSuppressor                    ,*  ,3200      ,600       
+		A2Suppressor                            ,*  ,3200      ,600       
+		MassScoutSuppressor                     ,*  ,3200      ,600       
+		Shotgun_Suppressor                      ,*  ,4500      ,600       
+		MassSuppressor308                       ,*  ,4500      ,600       
+		
+		
+	<Category> Miscellaneous
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Flashlights                             ,*  ,-1        ,-1        
+		Universallight                          ,*  ,120       ,60        
+		TLRLight                                ,*  ,120       ,60        
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Rails                                   ,*  ,-1        ,-1        
+		M1A_RailAtt                             ,*  ,100       ,50        
+		WE_PicatinnyRail                        ,*  ,100       ,50        
+
+<Trader> Clothing Trader
+	<Category> Glasses
+		SportGlasses_Orange                     ,*  ,17        ,8         
+		SportGlasses_Blue                       ,*  ,18        ,9         
+		SportGlasses_Black                      ,*  ,20        ,10        
+		SportGlasses_Green                      ,*  ,20        ,10        
+		ThinFramesGlasses                       ,*  ,20        ,10        
+		ThickFramesGlasses                      ,*  ,23        ,11        
+		DesignerGlasses                         ,*  ,30        ,15        
+		AviatorGlasses                          ,*  ,40        ,20        
+		TacticalGoggles                         ,*  ,60        ,30        
+		NVGHeadstrap                            ,*  ,500       ,150       
+		NVGoggles                               ,*  ,2500      ,750       
+		
+	<Category> Gloves
+		SurgicalGloves_LightBlue                ,*  ,50        ,10        
+		SurgicalGloves_Blue                     ,*  ,50        ,10        
+		SurgicalGloves_White                    ,*  ,50        ,10        
+		SurgicalGloves_Green                    ,*  ,50        ,10        
+		WorkingGloves_Yellow                    ,*  ,50        ,10        
+		WorkingGloves_Beige                     ,*  ,50        ,10        
+		WorkingGloves_Brown                     ,*  ,50        ,10        
+		WorkingGloves_Black                     ,*  ,50        ,10        
+		TacticalGloves_Beige                    ,*  ,100       ,20        
+		TacticalGloves_Black                    ,*  ,100       ,20        
+		TacticalGloves_Green                    ,*  ,100       ,20        
+		OMNOGloves_Gray                         ,*  ,100       ,20        
+		OMNOGloves_Brown                        ,*  ,100       ,20        
+		NBCGlovesGray                           ,*  ,150       ,30        
+		-
+		MassNBCglovesBlue                       ,*  ,1000      ,5         
+
+	<Category> Hats & Caps
+		MedicalScrubsHat_Blue                   ,*  ,50        ,20        
+		MedicalScrubsHat_White                  ,*  ,50        ,20        
+		MedicalScrubsHat_Green                  ,*  ,50        ,20        
+		Bandana_Polkapattern                    ,*  ,50        ,20        
+		Bandana_Redpattern                      ,*  ,50        ,20        
+		Bandana_Blackpattern                    ,*  ,50        ,20        
+		Bandana_Greenpattern                    ,*  ,50        ,20        
+		Bandana_Camopattern                     ,*  ,50        ,20        
+		BaseballCap_CMMG_Pink                   ,*  ,50        ,20        
+		BaseballCap_Pink                        ,*  ,50        ,20        
+		BaseballCap_Red                         ,*  ,50        ,20        
+		BaseballCap_Blue                        ,*  ,50        ,20        
+		BaseballCap_Beige                       ,*  ,50        ,20        
+		BaseballCap_CMMG_Black                  ,*  ,50        ,20        
+		BaseballCap_Black                       ,*  ,50        ,20        
+		BaseballCap_Olive                       ,*  ,50        ,20        
+		BaseballCap_Camo                        ,*  ,50        ,20        
+		PrisonerCap                             ,*  ,50        ,20        
+		BoonieHat_Orange                        ,*  ,50        ,20        
+		BoonieHat_Red                           ,*  ,50        ,20        
+		BoonieHat_Blue                          ,*  ,50        ,20        
+		BoonieHat_NavyBlue                      ,*  ,50        ,20        
+		BoonieHat_Black                         ,*  ,50        ,20        
+		BoonieHat_Tan                           ,*  ,50        ,20        
+		BoonieHat_Olive                         ,*  ,50        ,20        
+		BoonieHat_DPM                           ,*  ,50        ,20        
+		BoonieHat_Dubok                         ,*  ,50        ,20        
+		BoonieHat_Flecktran                     ,*  ,50        ,20        
+		CowboyHat_Brown                         ,*  ,50        ,20        
+		CowboyHat_darkBrown                     ,*  ,50        ,20        
+		CowboyHat_black                         ,*  ,50        ,20        
+		CowboyHat_green                         ,*  ,50        ,20        
+		PilotkaCap                              ,*  ,50        ,20        
+		OfficerHat                              ,*  ,50        ,20        
+		PoliceCap                               ,*  ,50        ,20        
+		MilitaryBeret_ChDKZ                     ,*  ,50        ,20        
+		MilitaryBeret_Red                       ,*  ,50        ,20        
+		MilitaryBeret_UN                        ,*  ,50        ,20        
+		MilitaryBeret_CDF                       ,*  ,50        ,20        
+		MilitaryBeret_NZ                        ,*  ,50        ,20        
+		BeanieHat_Pink                          ,*  ,50        ,20        
+		BeanieHat_Red                           ,*  ,50        ,20        
+		BeanieHat_Blue                          ,*  ,50        ,20        
+		BeanieHat_Grey                          ,*  ,50        ,20        
+		BeanieHat_Beige                         ,*  ,50        ,20        
+		BeanieHat_Brown                         ,*  ,50        ,20        
+		BeanieHat_Black                         ,*  ,50        ,20        
+		BeanieHat_Green                         ,*  ,50        ,20        
+		FlatCap_Red                             ,*  ,50        ,20        
+		FlatCap_Blue                            ,*  ,50        ,20        
+		FlatCap_BrownCheck                      ,*  ,50        ,20        
+		FlatCap_GreyCheck                       ,*  ,50        ,20        
+		FlatCap_Grey                            ,*  ,50        ,20        
+		FlatCap_Brown                           ,*  ,50        ,20        
+		FlatCap_Black                           ,*  ,50        ,20        
+		FlatCap_BlackCheck                      ,*  ,50        ,20        
+		ZmijovkaCap_Red                         ,*  ,50        ,20        
+		ZmijovkaCap_Blue                        ,*  ,50        ,20        
+		ZmijovkaCap_Brown                       ,*  ,50        ,20        
+		ZmijovkaCap_Black                       ,*  ,50        ,20        
+		ZmijovkaCap_Green                       ,*  ,50        ,20        
+		RadarCap_Red                            ,*  ,50        ,20        
+		RadarCap_Blue                           ,*  ,50        ,20        
+		RadarCap_Brown                          ,*  ,50        ,20        
+		RadarCap_Black                          ,*  ,50        ,20        
+		RadarCap_Green                          ,*  ,50        ,20        
+		Ushanka_Blue                            ,*  ,50        ,20        
+		Ushanka_Black                           ,*  ,50        ,20        
+		Ushanka_Green                           ,*  ,50        ,20        
+		NBCHoodGray                             ,*  ,75        ,20        
+		-
+		Massurbancamohat                        ,*  ,100       ,20        
+		MasscamoBooniehat                       ,*  ,100       ,20        
+		MassBeigeUshanka                        ,*  ,100       ,20        
+		MassHuntingCowboyhat                    ,*  ,100       ,20        
+		MassWinterHuntingHood                   ,*  ,100       ,20        
+		MassNBChoodYellow                       ,*  ,100       ,20        
+		MassFedora_Black                        ,*  ,100       ,20        
+		MassFedora_White                        ,*  ,100       ,20        
+		MassFedora_Pink                         ,*  ,100       ,20        
+		MassFedora_Yellow                       ,*  ,100       ,20        
+		MassFedora_Red                          ,*  ,100       ,20        
+		MassFedora_Blue                         ,*  ,100       ,20        
+		MassFedora_Grey                         ,*  ,100       ,20        
+		MassFedora_Brown                        ,*  ,100       ,20        
+		MassFedora_Beige                        ,*  ,100       ,20        
+		MassCatEars                             ,*  ,10000     ,500       
+
+	<Category> Helmets
+		ConstructionHelmet_Yellow               ,*  ,150       ,50        
+		ConstructionHelmet_Orange               ,*  ,150       ,50        
+		ConstructionHelmet_Red                  ,*  ,150       ,50        
+		ConstructionHelmet_Blue                 ,*  ,150       ,50        
+		ConstructionHelmet_White                ,*  ,150       ,50        
+		ConstructionHelmet_Lime                 ,*  ,150       ,50        
+		SkateHelmet_Red                         ,*  ,125       ,12        
+		SkateHelmet_Blue                        ,*  ,125       ,12        
+		SkateHelmet_Gray                        ,*  ,125       ,12        
+		SkateHelmet_Black                       ,*  ,125       ,12        
+		SkateHelmet_Green                       ,*  ,125       ,13        
+		HockeyHelmet_Red                        ,*  ,125       ,13        
+		HockeyHelmet_Blue                       ,*  ,125       ,13        
+		HockeyHelmet_White                      ,*  ,125       ,13        
+		HockeyHelmet_Black                      ,*  ,125       ,14        
+		DirtBikeHelmet_Mouthguard               ,*  ,75        ,4         
+		DirtBikeHelmet_Visor                    ,*  ,75        ,8         
+		DirtBikeHelmet_Red                      ,*  ,75        ,15        
+		DirtBikeHelmet_Blue                     ,*  ,75        ,15        
+		DirtBikeHelmet_Police                   ,*  ,75        ,15        
+		DirtBikeHelmet_Green                    ,*  ,75        ,15        
+		DirtBikeHelmet_Chernarus                ,*  ,75        ,15        
+		DirtBikeHelmet_Black                    ,*  ,75        ,16        
+		DirtBikeHelmet_Khaki                    ,*  ,75        ,18        
+		MotoHelmet_Red                          ,*  ,125       ,18        
+		MotoHelmet_Blue                         ,*  ,125       ,18        
+		MotoHelmet_White                        ,*  ,125       ,18        
+		MotoHelmet_Lime                         ,*  ,125       ,18        
+		MotoHelmet_Grey                         ,*  ,125       ,18        
+		MotoHelmet_Black                        ,*  ,125       ,20        
+		MotoHelmet_Green                        ,*  ,125       ,22        
+		DarkMotoHelmet_Red                      ,*  ,125       ,22        
+		DarkMotoHelmet_Blue                     ,*  ,125       ,22        
+		DarkMotoHelmet_White                    ,*  ,125       ,22        
+		DarkMotoHelmet_Lime                     ,*  ,125       ,22        
+		DarkMotoHelmet_Grey                     ,*  ,125       ,22        
+		DarkMotoHelmet_Black                    ,*  ,125       ,23        
+		DarkMotoHelmet_Green                    ,*  ,125       ,25        
+		TankerHelmet                            ,*  ,100       ,25        
+		GreatHelm                               ,*  ,1000      ,30        
+		ZSh3PilotHelmet                         ,*  ,125       ,35        
+		FirefightersHelmet_Yellow               ,*  ,125       ,40        
+		FirefightersHelmet_Red                  ,*  ,125       ,40        
+		FirefightersHelmet_White                ,*  ,125       ,40        
+		Mich2001Helmet                          ,*  ,500       ,40        
+		GorkaHelmetVisor                        ,*  ,200       ,20        
+		GorkaHelmet                             ,*  ,500       ,50        
+		Ssh68Helmet                             ,*  ,300       ,80        
+		BallisticHelmet_UN                      ,*  ,500       ,80        
+		BallisticHelmet_Black                   ,*  ,500       ,100       
+		BallisticHelmet_Green                   ,*  ,500       ,110       
+		-
+		Massmichblack                           ,*  ,750       ,250       
+		Massww2SShelmet                         ,*  ,400       ,150       
+		MassCBhelmet                            ,*  ,1000      ,250       
+		MassCBhelmet_Green                      ,*  ,1000      ,250       
+
+	<Category> Masks
+		SurgicalMask                            ,*  ,50        ,25        
+		BandanaMask_PolkaPattern                ,*  ,50        ,25        
+		BandanaMask_RedPattern                  ,*  ,50        ,25        
+		BandanaMask_BlackPattern                ,*  ,50        ,25        
+		BandanaMask_GreenPattern                ,*  ,50        ,25        
+		BandanaMask_CamoPattern                 ,*  ,50        ,25        
+		NioshFaceMask                           ,*  ,50        ,25        
+		HockeyMask                              ,*  ,50        ,25        
+		//HoxtonMask,			*,		50,		25
+		//WolfMask,				*,		50,		25
+		//DallasMask,			*,		50,		25
+		Balaclava3Holes_Blue                    ,*  ,50        ,25        
+		Balaclava3Holes_Beige                   ,*  ,50        ,25        
+		Balaclava3Holes_Black                   ,*  ,55        ,25        
+		Balaclava3Holes_Green                   ,*  ,60        ,25        
+		WeldingMask                             ,*  ,70        ,25        
+		GP5GasMask                              ,*  ,120       ,25        
+		-
+		Massblackgp5                            ,*  ,1000      ,5         
+
+	<Category> Shirts
+		TShirt_OrangeWhiteStripes               ,*  ,50        ,25        
+		TShirt_RedBlackStripes                  ,*  ,50        ,25        
+		TShirt_Red                              ,*  ,50        ,25        
+		TShirt_Blue                             ,*  ,50        ,25        
+		TShirt_White                            ,*  ,50        ,25        
+		TShirt_Grey                             ,*  ,50        ,25        
+		TShirt_Beige                            ,*  ,50        ,25        
+		TShirt_Black                            ,*  ,50        ,25        
+		TShirt_Green                            ,*  ,50        ,25        
+		TelnyashkaShirt                         ,*  ,50        ,25        
+		Shirt_RedCheck                          ,*  ,50        ,25        
+		Shirt_BlueCheckBright                   ,*  ,50        ,25        
+		Shirt_BlueCheck                         ,*  ,50        ,25        
+		Shirt_WhiteCheck                        ,*  ,50        ,25        
+		Shirt_PlaneBlack                        ,*  ,50        ,25        
+		Shirt_GreenCheck                        ,*  ,50        ,25        
+		Blouse_Violet                           ,*  ,50        ,25        
+		Blouse_Blue                             ,*  ,50        ,25        
+		Blouse_White                            ,*  ,50        ,25        
+		Blouse_Green                            ,*  ,50        ,25        
+		MedicalScrubsShirt_Blue                 ,*  ,50        ,25        
+		MedicalScrubsShirt_White                ,*  ,50        ,25        
+		MedicalScrubsShirt_Green                ,*  ,50        ,25        
+		ChernarusSportShirt                     ,*  ,50        ,25        
+		TacticalShirt_Grey                      ,*  ,100       ,50        
+		TacticalShirt_Tan                       ,*  ,100       ,50        
+		TacticalShirt_Black                     ,*  ,100       ,50        
+		TacticalShirt_Olive                     ,*  ,100       ,50        
+
+	<Category> Hoodies & Sweater
+		Sweater_Red                             ,*  ,100       ,50        
+		Sweater_Blue                            ,*  ,100       ,50        
+		Sweater_Gray                            ,*  ,100       ,50        
+		Sweater_Green                           ,*  ,100       ,50        
+		Hoodie_DrJ0nes                          ,*  ,100       ,50        
+		Hoodie_GraffitiTiles                    ,*  ,100       ,50        
+		Hoodie_Red                              ,*  ,100       ,50        
+		Hoodie_Blue                             ,*  ,100       ,50        
+		Hoodie_Grey                             ,*  ,100       ,50        
+		Hoodie_Brown                            ,*  ,100       ,50        
+		Hoodie_Black                            ,*  ,100       ,50        
+		Hoodie_Green                            ,*  ,100       ,50        
+		-
+		Masswoodlandcamosweater                 ,*  ,200       ,75        
+		MassCamoHoodie                          ,*  ,200       ,75        
+		MassCUUquiltedJacket                    ,*  ,200       ,75        
+		
+	<Category> Vests
+		
+		HuntingVest                             ,*  ,150       ,18        
+		MassSmershvestcomplete                  ,*  ,150       ,5         
+		MassSmershvestWintercomplete            ,*  ,150       ,5         
+		MassUKAssVestWinter                     ,*  ,150       ,5         
+		MassSmershvestWW2complete               ,*  ,150       ,5         
+		MassSmershvestblackcomplete             ,*  ,150       ,5         
+		UKAssVest_Black                         ,*  ,150       ,50        
+		UKAssVest_Khaki                         ,*  ,150       ,50        
+		UKAssVest_Olive                         ,*  ,150       ,50        
+		UKAssVest_Camo                          ,*  ,150       ,50        
+		SmershVest                              ,*  ,150       ,50        
+		HighCapacityVest_Black                  ,*  ,200       ,60        
+		HighCapacityVest_Olive                  ,*  ,200       ,60        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		PoliceVest                              ,*  ,250       ,75        
+		Masswoodlandcamovest                    ,*  ,250       ,75        
+		PressVest_LightBlue                     ,*  ,250       ,75        
+		PressVest_Blue                          ,*  ,250       ,75        
+		Mass_TradeVest                          ,*  ,250       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		PlateCarrierVest                        ,*  ,750       ,200       
+		MassPlateCarrier_PartizanM              ,*  ,750       ,200       
+		MassPlateCarrier_Black                  ,*  ,750       ,200       
+		MassPlateCarrier_Winter                 ,*  ,750       ,200       
+		MassPlateCarrier_ODG                    ,*  ,750       ,200       
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		-
+		
+		
+		
+		
+
+	<Category> Jackets & Coats
+		LabCoat                                 ,*  ,75        ,40        
+		TrackSuitJacket_Red                     ,*  ,75        ,40        
+		TrackSuitJacket_LightBlue               ,*  ,75        ,40        
+		TrackSuitJacket_Blue                    ,*  ,75        ,40        
+		TrackSuitJacket_Black                   ,*  ,75        ,40        
+		TrackSuitJacket_Green                   ,*  ,75        ,40        
+		DenimJacket                             ,*  ,75        ,40        
+		ManSuit_Blue                            ,*  ,75        ,40        
+		ManSuit_White                           ,*  ,75        ,40        
+		ManSuit_LightGrey                       ,*  ,75        ,40        
+		ManSuit_DarkGrey                        ,*  ,75        ,40        
+		ManSuit_Beige                           ,*  ,75        ,40        
+		ManSuit_Brown                           ,*  ,75        ,40        
+		ManSuit_Black                           ,*  ,75        ,40        
+		ManSuit_Khaki                           ,*  ,75        ,40        
+		WomanSuit_Blue                          ,*  ,75        ,40        
+		WomanSuit_White                         ,*  ,75        ,40        
+		WomanSuit_LightGrey                     ,*  ,75        ,40        
+		WomanSuit_DarkGrey                      ,*  ,75        ,40        
+		WomanSuit_Beige                         ,*  ,75        ,40        
+		WomanSuit_Brown                         ,*  ,75        ,40        
+		WomanSuit_Black                         ,*  ,75        ,40        
+		WomanSuit_Khaki                         ,*  ,75        ,40        
+		WoolCoat_Red                            ,*  ,75        ,40        
+		WoolCoat_RedCheck                       ,*  ,75        ,40        
+		WoolCoat_Blue                           ,*  ,75        ,40        
+		WoolCoat_BlueCheck                      ,*  ,75        ,40        
+		WoolCoat_GreyCheck                      ,*  ,75        ,40        
+		WoolCoat_BrownCheck                     ,*  ,75        ,40        
+		WoolCoat_Beige                          ,*  ,75        ,40        
+		WoolCoat_Black                          ,*  ,75        ,40        
+		WoolCoat_BlackCheck                     ,*  ,75        ,40        
+		WoolCoat_Green                          ,*  ,75        ,40        
+		RidersJacket_Black                      ,*  ,75        ,40        
+		FirefighterJacket_Beige                 ,*  ,75        ,40        
+		FirefighterJacket_Black                 ,*  ,75        ,40        
+		JumpsuitJacket_Red                      ,*  ,75        ,40        
+		JumpsuitJacket_Blue                     ,*  ,75        ,40        
+		JumpsuitJacket_Gray                     ,*  ,75        ,40        
+		JumpsuitJacket_Green                    ,*  ,75        ,40        
+		BomberJacket_Maroon                     ,*  ,75        ,40        
+		BomberJacket_SkyBlue                    ,*  ,75        ,40        
+		BomberJacket_Blue                       ,*  ,75        ,40        
+		BomberJacket_Grey                       ,*  ,75        ,40        
+		BomberJacket_Brown                      ,*  ,75        ,40        
+		BomberJacket_Black                      ,*  ,75        ,40        
+		BomberJacket_Olive                      ,*  ,75        ,40        
+		QuiltedJacket_Orange                    ,*  ,75        ,40        
+		QuiltedJacket_Yellow                    ,*  ,75        ,40        
+		QuiltedJacket_Red                       ,*  ,75        ,40        
+		QuiltedJacket_Violet                    ,*  ,75        ,40        
+		QuiltedJacket_Blue                      ,*  ,75        ,40        
+		QuiltedJacket_Grey                      ,*  ,75        ,40        
+		QuiltedJacket_Black                     ,*  ,75        ,40        
+		QuiltedJacket_Green                     ,*  ,75        ,40        
+		PrisonUniformJacket                     ,*  ,75        ,40        
+		PoliceJacketOrel                        ,*  ,75        ,40        
+		PoliceJacket                            ,*  ,75        ,40        
+		ParamedicJacket_Crimson                 ,*  ,75        ,40        
+		ParamedicJacket_Blue                    ,*  ,75        ,40        
+		ParamedicJacket_Green                   ,*  ,75        ,40        
+		HikingJacket_Red                        ,*  ,75        ,40        
+		HikingJacket_Blue                       ,*  ,75        ,40        
+		HikingJacket_Black                      ,*  ,75        ,40        
+		HikingJacket_Green                      ,*  ,75        ,40        
+		Raincoat_Pink                           ,*  ,75        ,40        
+		Raincoat_Orange                         ,*  ,75        ,40        
+		Raincoat_Yellow                         ,*  ,75        ,40        
+		Raincoat_Red                            ,*  ,75        ,40        
+		Raincoat_Blue                           ,*  ,75        ,40        
+		Raincoat_Black                          ,*  ,75        ,40        
+		Raincoat_Green                          ,*  ,75        ,40        
+		TTsKOJacket_Camo                        ,*  ,300       ,100       
+		BDUJacket                               ,*  ,300       ,100       
+		HuntingJacket_Winter                    ,*  ,450       ,150       
+		HuntingJacket_Brown                     ,*  ,300       ,100       
+		HuntingJacket_Autumn                    ,*  ,300       ,100       
+		HuntingJacket_Spring                    ,*  ,300       ,100       
+		HuntingJacket_Summer                    ,*  ,300       ,100       
+		M65Jacket_Tan                           ,*  ,300       ,100       
+		M65Jacket_Black                         ,*  ,300       ,100       
+		M65Jacket_Khaki                         ,*  ,300       ,100       
+		M65Jacket_Olive                         ,*  ,300       ,100       
+		GorkaEJacket_Autumn                     ,*  ,325       ,115       
+		GorkaEJacket_Flat                       ,*  ,325       ,115       
+		GorkaEJacket_PautRev                    ,*  ,325       ,115       
+		GorkaEJacket_Summer                     ,*  ,325       ,115       
+		USMCJacket_Desert                       ,*  ,300       ,100       
+		USMCJacket_Woodland                     ,*  ,300       ,100       
+		NBCJacketGray                           ,*  ,300       ,100       
+		-
+		Massurbancamom65                        ,*  ,300       ,100       
+		MassSM90Top                             ,*  ,300       ,100       
+		MassSM90WTop                            ,*  ,300       ,100       
+		MassBlackGorkatop                       ,*  ,300       ,100       
+		MassGorkaInvertWinterTop                ,*  ,350       ,120       
+		MassGorkaInvertWoodlandTop              ,*  ,300       ,100       
+		MassGorkaInvertFlecktarnTop             ,*  ,300       ,100       
+		MassUSww2top                            ,*  ,300       ,100       
+		MassGokuShirt                           ,*  ,1000      ,250       
+		MassTropicamTop                         ,*  ,300       ,100       
+		MassMandraketop                         ,*  ,300       ,100       
+		MassWinterHunterTop                     ,*  ,350       ,100       
+		MassWinterCUUJacket                     ,*  ,350       ,100       
+		MassWinterBDUJacket                     ,*  ,350       ,100       
+		MassTUhikingjacket                      ,*  ,200       ,50        
+		MassOrelTopgreen                        ,*  ,200       ,50        
+		MassNBCJacketYellow                     ,*  ,200       ,50        
+		MassBlackJacket                         ,*  ,200       ,50        
+		MassBeigeJacket                         ,*  ,200       ,50        
+		MassSSww2Camotop                        ,*  ,200       ,50        
+		MassDetectiveCoat                       ,*  ,200       ,50        
+		MassDetectiveCoat_Black                 ,*  ,200       ,50        
+
+
+
+	<Category> Pants
+		MedicalScrubsPants_Blue                 ,*  ,50        ,25        
+		MedicalScrubsPants_White                ,*  ,50        ,25        
+		MedicalScrubsPants_Green                ,*  ,50        ,25        
+		TrackSuitPants_Red                      ,*  ,50        ,25        
+		TrackSuitPants_LightBlue                ,*  ,50        ,25        
+		TrackSuitPants_Blue                     ,*  ,50        ,25        
+		TrackSuitPants_Black                    ,*  ,50        ,25        
+		TrackSuitPants_Green                    ,*  ,50        ,25        
+		PrisonUniformPants                      ,*  ,50        ,25        
+		Breeches_Pink                           ,*  ,50        ,25        
+		Breeches_Red                            ,*  ,50        ,25        
+		Breeches_Blue                           ,*  ,50        ,25        
+		Breeches_White                          ,*  ,50        ,25        
+		Breeches_Beetcheck                      ,*  ,50        ,25        
+		Breeches_Beige                          ,*  ,50        ,25        
+		Breeches_Browncheck                     ,*  ,50        ,25        
+		Breeches_Black                          ,*  ,50        ,25        
+		Breeches_Blackcheck                     ,*  ,50        ,25        
+		Breeches_Green                          ,*  ,50        ,25        
+		SlacksPants_Blue                        ,*  ,50        ,25        
+		SlacksPants_White                       ,*  ,50        ,25        
+		SlacksPants_LightGrey                   ,*  ,50        ,25        
+		SlacksPants_DarkGrey                    ,*  ,50        ,25        
+		SlacksPants_Beige                       ,*  ,50        ,25        
+		SlacksPants_Brown                       ,*  ,50        ,25        
+		SlacksPants_Black                       ,*  ,50        ,25        
+		SlacksPants_Khaki                       ,*  ,50        ,25        
+		CanvasPantsMidi_Red                     ,*  ,50        ,25        
+		CanvasPantsMidi_Violet                  ,*  ,50        ,25        
+		CanvasPantsMidi_Blue                    ,*  ,50        ,25        
+		CanvasPantsMidi_Grey                    ,*  ,50        ,25        
+		CanvasPantsMidi_Beige                   ,*  ,50        ,25        
+		CanvasPants_Red                         ,*  ,50        ,25        
+		CanvasPants_Violet                      ,*  ,50        ,25        
+		CanvasPants_Blue                        ,*  ,50        ,25        
+		CanvasPants_Grey                        ,*  ,50        ,25        
+		CanvasPants_Beige                       ,*  ,50        ,25        
+		JumpsuitPants_Red                       ,*  ,50        ,25        
+		JumpsuitPants_Blue                      ,*  ,50        ,25        
+		JumpsuitPants_Grey                      ,*  ,50        ,25        
+		JumpsuitPants_Green                     ,*  ,50        ,25        
+		PolicePants                             ,*  ,50        ,25        
+		ParamedicPants_Crimson                  ,*  ,50        ,25        
+		ParamedicPants_Blue                     ,*  ,50        ,25        
+		ParamedicPants_Green                    ,*  ,50        ,25        
+		FirefightersPants_Beige                 ,*  ,50        ,25        
+		FirefightersPants_Black                 ,*  ,50        ,25        
+		CargoPants_Blue                         ,*  ,50        ,25        
+		CargoPants_Grey                         ,*  ,50        ,25        
+		CargoPants_Beige                        ,*  ,50        ,25        
+		CargoPants_Black                        ,*  ,50        ,25        
+		CargoPants_Green                        ,*  ,50        ,25        
+		ShortJeans_Red                          ,*  ,50        ,25        
+		ShortJeans_Blue                         ,*  ,50        ,25        
+		ShortJeans_Darkblue                     ,*  ,50        ,25        
+		ShortJeans_Brown                        ,*  ,50        ,25        
+		ShortJeans_Black                        ,*  ,50        ,25        
+		ShortJeans_Green                        ,*  ,50        ,25        
+		Jeans_Blue                              ,*  ,50        ,25        
+		Jeans_BlueDark                          ,*  ,50        ,25        
+		Jeans_Grey                              ,*  ,50        ,25        
+		Jeans_Brown                             ,*  ,50        ,25        
+		Jeans_Black                             ,*  ,50        ,25        
+		Jeans_Green                             ,*  ,50        ,25        
+		TTSKOPants                              ,*  ,50        ,25        
+		BDUPants                                ,*  ,75        ,30        
+		USMCPants_Desert                        ,*  ,75        ,30        
+		USMCPants_Woodland                      ,*  ,75        ,30        
+		PolicePantsOrel                         ,*  ,75        ,30        
+		HunterPants_Winter                      ,*  ,150       ,50        
+		HunterPants_Brown                       ,*  ,100       ,50        
+		HunterPants_Spring                      ,*  ,100       ,40        
+		HunterPants_Autumn                      ,*  ,100       ,40        
+		HunterPants_Summer                      ,*  ,100       ,40        
+		GorkaPants_Flat                         ,*  ,130       ,45        
+		GorkaPants_PautRev                      ,*  ,130       ,45        
+		GorkaPants_Autumn                       ,*  ,130       ,45        
+		GorkaPants_Summer                       ,*  ,130       ,45        
+		NBCPantsGray                            ,*  ,200       ,45        
+		-
+		
+		MassNBCpantsYellow                      ,*  ,200       ,50        
+		MassBlackGorkabottom                    ,*  ,150       ,50        
+		MassGorkaInvertWinterPants              ,*  ,175       ,50        
+		MassGorkaInvertWoodlandPants            ,*  ,150       ,50        
+		MassGorkaInvertFlecktarnPants           ,*  ,150       ,50        
+		MassTropicamPants                       ,*  ,150       ,50        
+		Masswoodlandcargopants                  ,*  ,150       ,50        
+		Massurbancamocargopants                 ,*  ,150       ,50        
+		Massjeanshorts                          ,*  ,50        ,25        
+		MassMandrakebottom                      ,*  ,150       ,50        
+		MassWinterCUUPants                      ,*  ,175       ,50        
+		MassWinterBDUPants                      ,*  ,175       ,50        
+		MassWinterHunterPants                   ,*  ,175       ,50        
+		Massorelpantsgreen                      ,*  ,150       ,50        
+		MassSM90Pants                           ,*  ,150       ,50        
+		MassSM90WPants                          ,*  ,150       ,50        
+		MassSSww2CamoBreeches                   ,*  ,150       ,50        
+		MassSSww2Camopants                      ,*  ,150       ,50        
+		
+	
+	
+	<Category> Shoes & Boots
+		AthleticShoes_Blue                      ,*  ,30        ,4         
+		AthleticShoes_Grey                      ,*  ,30        ,5         
+		AthleticShoes_Brown                     ,*  ,30        ,5         
+		AthleticShoes_Black                     ,*  ,30        ,5         
+		AthleticShoes_Green                     ,*  ,30        ,5         
+		JoggingShoes_Violet                     ,*  ,30        ,7         
+		JoggingShoes_Red                        ,*  ,30        ,7         
+		JoggingShoes_Blue                       ,*  ,30        ,7         
+		JoggingShoes_White                      ,*  ,30        ,7         
+		JoggingShoes_Black                      ,*  ,30        ,7         
+		Sneakers_Red                            ,*  ,30        ,7         
+		Sneakers_White                          ,*  ,30        ,7         
+		Sneakers_Gray                           ,*  ,30        ,7         
+		Sneakers_Black                          ,*  ,30        ,7         
+		Sneakers_Green                          ,*  ,30        ,7         
+		DressShoes_White                        ,*  ,30        ,7         
+		DressShoes_Brown                        ,*  ,30        ,8         
+		DressShoes_Black                        ,*  ,30        ,8         
+		DressShoes_Beige                        ,*  ,30        ,8         
+		DressShoes_Sunburst                     ,*  ,30        ,8         
+		HikingBootsLow_Blue                     ,*  ,45        ,12        
+		HikingBootsLow_Grey                     ,*  ,45        ,12        
+		HikingBootsLow_Beige                    ,*  ,45        ,13        
+		HikingBootsLow_Black                    ,*  ,50        ,14        
+		WorkingBoots_Yellow                     ,*  ,55        ,12        
+		WorkingBoots_Grey                       ,*  ,60        ,15        
+		WorkingBoots_Beige                      ,*  ,60        ,15        
+		WorkingBoots_Brown                      ,*  ,60        ,15        
+		WorkingBoots_Green                      ,*  ,65        ,17        
+		HikingBoots_Brown                       ,*  ,75        ,20        
+		HikingBoots_Black                       ,*  ,75        ,20        
+		CombatBoots_Grey                        ,*  ,100       ,22        
+		CombatBoots_Beige                       ,*  ,100       ,22        
+		CombatBoots_Brown                       ,*  ,100       ,22        
+		CombatBoots_Black                       ,*  ,100       ,22        
+		CombatBoots_Green                       ,*  ,100       ,22        
+		JungleBoots_Beige                       ,*  ,80        ,24        
+		JungleBoots_Brown                       ,*  ,80        ,24        
+		JungleBoots_Black                       ,*  ,80        ,24        
+		JungleBoots_Olive                       ,*  ,80        ,24        
+		JungleBoots_Green                       ,*  ,80        ,24        
+		Wellies_Grey                            ,*  ,60        ,25        
+		Wellies_Brown                           ,*  ,60        ,25        
+		Wellies_Black                           ,*  ,60        ,25        
+		Wellies_Green                           ,*  ,60        ,28        
+		TTSKOBoots                              ,*  ,120       ,35        
+		MilitaryBoots_Redpunk                   ,*  ,120       ,35        
+		MilitaryBoots_Bluerock                  ,*  ,120       ,35        
+		MilitaryBoots_Beige                     ,*  ,120       ,35        
+		MilitaryBoots_Brown                     ,*  ,120       ,35        
+		MilitaryBoots_Black                     ,*  ,120       ,35        
+		NBCBootsGray                            ,*  ,150       ,50        
+		-
+		MassNBCbootsYellow                      ,*  ,50        ,25        
+		Mass_Sneakers                           ,*  ,50        ,25        
+
+	
+		
+	//<Category> Seasonal
+		//SantasBeard,			*,		15,		0
+		//SantasHat,			*,		35,		0
+		//PumpkinHelmet,		*,		50,		0
+
+	<Category> Holster, Pouches, Belts & Tacticalbags
+		ChestHolster                            ,*  ,150       ,20        
+		PlateCarrierHolster                     ,*  ,150       ,20        
+		MassPlateCarrierHolster_Black           ,*  ,150       ,50        
+		MassPlateCarrierHolster_Black           ,*  ,150       ,50        
+		MassPlateCarrierHolster_PartizanM       ,*  ,150       ,50        
+		MassPlateCarrierHolster_Winter          ,*  ,150       ,50        
+		MassPlateCarrierHolster_ODG             ,*  ,150       ,50        
+
+		-
+		#x9                                     ,W  ,-1        ,-1        
+		Pouches                                 ,W  ,-1        ,-1        
+		PlateCarrierPouches                     ,*  ,150       ,50        
+		Mass_WW2Vest                            ,*  ,300       ,50        
+		MassLargePlateCarrierPouches            ,*  ,350       ,50        
+		MassLargePlateCarrierPouches_Black      ,*  ,350       ,50        
+		MassLargePlateCarrierPouches_Tan        ,*  ,350       ,50        
+		MassPlateCarrierPouches_Black           ,*  ,350       ,50        
+		MassPlateCarrierPouches_PartizanM       ,*  ,350       ,50        
+		MassPlateCarrierPouches_Winter          ,*  ,350       ,50        
+		MassPlateCarrierPouches_ODG             ,*  ,350       ,50        
+		Massmagpouches                          ,*  ,350       ,50        
+		Mass_WW2Vest                            ,*  ,300       ,50        
+		MassLargeMollePouch                     ,*  ,450       ,50        
+		MassLargeMollePouchBlack                ,*  ,450       ,50        
+		MassLargeMollePouchGorka                ,*  ,450       ,50        
+		MassLargeMollePouchGreen                ,*  ,450       ,50        
+		
+		#x9                                     ,W  ,-1        ,-1        
+		Belts                                   ,W  ,-1        ,-1        
+		MassToolbelt                            ,*  ,500       ,50        
+		MassMolleBelt                           ,*  ,500       ,50        
+		MassMolleBeltBlack                      ,*  ,500       ,50        
+		MassMolleBeltODG                        ,*  ,500       ,50        
+		MassMolleBeltWD                         ,*  ,500       ,50        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		TacticalBag                             ,W  ,-1        ,-1        
+		MassTacticalBag                         ,*  ,150       ,50        
+		MassTacticalBagBlack                    ,*  ,150       ,50        
+		MassTacticalBagWD                       ,*  ,150       ,50        
+		
+	<Category> Bags
+		ChildBag_Red                            ,*  ,50        ,5         
+		ChildBag_Blue                           ,*  ,50        ,5         
+		ChildBag_Green                          ,*  ,50        ,6         
+		DryBag_Yellow                           ,*  ,50        ,8         
+		DryBag_Orange                           ,*  ,100       ,8         
+		DryBag_Red                              ,*  ,100       ,8         
+		DryBag_Blue                             ,*  ,100       ,8         
+		DryBag_Black                            ,*  ,100       ,8         
+		DryBag_Green                            ,*  ,100       ,10        
+		TaloonBag_Orange                        ,*  ,200       ,10        
+		TaloonBag_Violet                        ,*  ,200       ,10        
+		TaloonBag_Blue                          ,*  ,200       ,10        
+		TaloonBag_Green                         ,*  ,200       ,20        
+		SmershBag                               ,*  ,100       ,30        
+		WaterproofBag_Yellow                    ,*  ,100       ,30        
+		WaterproofBag_Orange                    ,*  ,100       ,30        
+		WaterproofBag_Green                     ,*  ,100       ,30        
+		AssaultBag_Black                        ,*  ,150       ,30        
+		AssaultBag_Green                        ,*  ,150       ,30        
+		AssaultBag_Ttsko                        ,*  ,150       ,30        
+		HuntingBag                              ,*  ,250       ,30        
+		TortillaBag                             ,*  ,250       ,60        
+		CoyoteBag_Brown                         ,*  ,250       ,60        
+		CoyoteBag_Green                         ,*  ,250       ,60        
+		MountainBag_Orange                      ,*  ,350       ,80        
+		MountainBag_Red                         ,*  ,350       ,80        
+		MountainBag_Blue                        ,*  ,350       ,80        
+		MountainBag_Green                       ,*  ,350       ,100       
+		MassBlackYellowMB                       ,*  ,450       ,150       
+		Massczech                               ,*  ,450       ,150       
+		MassczechWinter                         ,*  ,450       ,150       
+		AliceBag_Black                          ,*  ,500       ,175       
+		AliceBag_Green                          ,*  ,500       ,175       
+		AliceBag_Camo                           ,*  ,500       ,175       
+		-
+		
+		MassWinterTortilla                      ,*  ,250       ,5         
+		MasscamoTaloon                          ,*  ,200       ,5         
+		MasscamoTaloon1                         ,*  ,200       ,5         
+		Massbrownhuntingbp                      ,*  ,300       ,5         
+		Massblackhuntingbp                      ,*  ,300       ,5         
+		MassWinterHuntingbp                     ,*  ,300       ,5         
+		MassSmersh                              ,*  ,150       ,5         
+		MassSmershwinter                        ,*  ,150       ,5         
+		MassCoyoteBPUrban                       ,*  ,350       ,5         
+		MassCanvasBag                           ,*  ,100       ,5         
+		MassRuckBagDesert                       ,*  ,600       ,5         
+		MassRuckBagBlack                        ,*  ,600       ,5         
+		MassRuckBagGorka                        ,*  ,600       ,5         
+		MassRuckBagGreen                        ,*  ,600       ,5         
+		MassSlingBag                            ,*  ,100       ,5         
+		MassSlingBagDesert                      ,*  ,350       ,5         
+		MassSlingBagGorka                       ,*  ,350       ,5         
+		MassMolleBagBlack                       ,*  ,350       ,5         
+		MassMolleBagDesert                      ,*  ,350       ,5         
+		MassMolleBagGorka                       ,*  ,350       ,5         
+		Massbag                                 ,*  ,400       ,5         
+		Massbag2                                ,*  ,400       ,5         
+		Massbag3                                ,*  ,400       ,5         
+		Massbag4                                ,*  ,400       ,5         
+		Massmedbag                              ,*  ,100       ,5         
+		Massmedbag_blue                         ,*  ,100       ,5         
+		Massmedbag_green                        ,*  ,100       ,5         
+		MassLargeSmersh                         ,*  ,150       ,5         
+		MassLargeSmersh_Black                   ,*  ,150       ,5         
+		MassLargeSmersh_Tan                     ,*  ,150       ,5         
+		MassSmershblack                         ,*  ,100       ,5         
+		//MassImprovisedBag_Black,*, 1000, 5
+		//MassImprovisedBag_Blue,*, 1000, 5
+		//MassImprovisedBag_Green,*, 1000, 5
+		//MassImprovisedBag_Orange,*, 1000, 5
+		//MassImprovisedBag_Pink,*, 1000, 5
+		//MassImprovisedBag_Red,*, 1000, 5
+		//MassImprovisedBag_Yellow,*, 1000, 5
+		//MassImprovisedBag_Woodland,*, 1000, 5
+		//MassImprovisedBag_Partizan,*, 1000, 5
+		//MassImprovisedBag_Urban,*, 1000, 5
+		MassRainCoatcourier_Black               ,*  ,1000      ,5         
+		//MassRainCoatcourier_Blue,*, 1000, 5
+		//MassRainCoatcourier_Green,*, 1000, 5
+		//MassRainCoatcourier_Orange,*, 1000, 5
+		//MassRainCoatcourier_Pink,*, 1000, 5
+		//MassRainCoatcourier_Red,*, 1000, 5
+		//MassRainCoatcourier_Yellow,*, 1000, 5
+		//MassRainCoatcourier_Woodland,*, 1000, 5
+		//MassRainCoatcourier_PartizanM,*, 1000, 5
+		//MassRainCoatcourier_Urban,*, 1000, 5
+		MassNBC_Bag                             ,*  ,1000      ,5         
+
+		
+		--Modded--
+		
+	<Category> Winter Gear
+		WinterGear_Ushanka                      ,*  ,250       ,125       
+		WinterGear_Beanie                       ,*  ,250       ,125       
+		WinterGear_BoonieHat                    ,*  ,250       ,125       
+		WinterGear_GorkaHelmet                  ,*  ,500       ,250       
+		WinterGear_TankerHelmet                 ,*  ,500       ,250       
+		WinterGear_BallisticHelmet              ,*  ,500       ,250       
+		WinterGear_Beret_CDF                    ,*  ,500       ,250       
+		WinterGear_RadarCap                     ,*  ,250       ,125       
+		WinterGear_Balaclava                    ,*  ,250       ,125       
+		WinterGear_BalaclavaSkull               ,*  ,250       ,125       
+		WinterGear_TacticalShirt                ,*  ,500       ,250       
+		WinterGear_TacticalShirt_camo           ,*  ,500       ,250       
+		WinterGear_M65Jacket                    ,*  ,500       ,250       
+		WinterGear_M65Jacket_camo               ,*  ,500       ,250       
+		WinterGear_TrackSuitJacket              ,*  ,500       ,250       
+		WinterGear_MedicJacket                  ,*  ,500       ,250       
+		WinterGear_HuntingJacket                ,*  ,500       ,250       
+		WinterGear_RainCoat                     ,*  ,500       ,250       
+		WinterGear_QuiltedJacket                ,*  ,500       ,250       
+		WinterGear_CargoPants_camo              ,*  ,500       ,250       
+		WinterGear_CargoPants                   ,*  ,500       ,250       
+		WinterGear_TrackSuitPants               ,*  ,500       ,250       
+		WinterGear_MedicPants                   ,*  ,500       ,250       
+		WinterGear_HighCapVest                  ,*  ,1000      ,500       
+		WinterGear_HighCapVest_camo             ,*  ,1000      ,500       
+		WinterGear_AssaultVest                  ,*  ,500       ,250       
+		WinterGear_AssaultVest_camo             ,*  ,500       ,250       
+		WinterGear_PlateCarrierVest             ,*  ,500       ,250       
+		WinterGear_PlateCarrierHolster          ,*  ,250       ,125       
+		WinterGear_PlateCarrierPouches          ,*  ,250       ,125       
+		WinterGear_HuntingBag                   ,*  ,400       ,150       
+		WinterGear_HuntingBag_winter            ,*  ,400       ,150       
+		WinterGear_HuntingBag_camo              ,*  ,400       ,150       
+		WinterGear_MountainBag                  ,*  ,400       ,150       
+		WinterGear_TaloonBag                    ,*  ,400       ,150       
+		WinterGear_AliceBag                     ,*  ,650       ,200       
+		WinterGear_AssaultBag                   ,*  ,650       ,200       
+		WinterGear_AssaultBag_camo              ,*  ,650       ,200       
+		WinterGear_DryBag                       ,*  ,300       ,100       
+		WinterGear_CoyoteBag                    ,*  ,450       ,150       
+		WinterGear_CoyoteBag_camo               ,*  ,450       ,150       
+		WinterGear_TortillaBag                  ,*  ,450       ,150       
+		WinterGear_TortillaBag_camo             ,*  ,450       ,150       
+		WinterGear_TacticalGloves               ,*  ,150       ,125       
+		WinterGear_MilitaryBoots                ,*  ,150       ,50        
+		
+		
+	<Category> Armbands
+		MassArmband_TU                          ,*  ,100       ,50        
+		MassArmband_NCR                         ,*  ,100       ,50        
+		MassArmband_snowBDU                     ,*  ,100       ,50        
+		MassArmband_PartizanM                   ,*  ,100       ,50        
+		MassArmband_Mandrake                    ,*  ,100       ,50        
+		MassArmband_Woodland                    ,*  ,100       ,50        
+		MassArmband_Urban                       ,*  ,100       ,50        
+		MassArmband_Orel                        ,*  ,100       ,50        
+		MassArmband_BWS                         ,*  ,100       ,50        
+		MassArmband_BT                          ,*  ,100       ,50        
+		Armband_Pink                            ,*  ,15        ,5         
+		Armband_Yellow                          ,*  ,15        ,5         
+		Armband_Orange                          ,*  ,15        ,5         
+		Armband_Red                             ,*  ,15        ,5         
+		Armband_Blue                            ,*  ,15        ,5         
+		Armband_White                           ,*  ,15        ,5         
+		Armband_Black                           ,*  ,15        ,5         
+		Armband_Green                           ,*  ,15        ,5         
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Countries                               ,W  ,-1        ,-1        
+		
+		Armband_AT                              ,1  ,250       ,125       
+		Armband_BE                              ,1  ,250       ,125       
+		Armband_BG                              ,1  ,250       ,125       
+		Armband_HR                              ,1  ,250       ,125       
+		Armband_CY                              ,1  ,250       ,125       
+		Armband_DK                              ,1  ,250       ,125       
+		Armband_EE                              ,1  ,250       ,125       
+		Armband_FI                              ,1  ,250       ,125       
+		Armband_FR                              ,1  ,250       ,125       
+		Armband_DE                              ,1  ,250       ,125       
+		Armband_GR                              ,1  ,250       ,125       
+		Armband_HU                              ,1  ,250       ,125       
+		Armband_IE                              ,1  ,250       ,125       
+		Armband_IT                              ,1  ,250       ,125       
+		Armband_LV                              ,1  ,250       ,125       
+		Armband_LT                              ,1  ,250       ,125       
+		Armband_LU                              ,1  ,250       ,125       
+		Armband_MT                              ,1  ,250       ,125       
+		Armband_NL                              ,1  ,250       ,125       
+		Armband_PL                              ,1  ,250       ,125       
+		Armband_PT                              ,1  ,250       ,125       
+		Armband_RO                              ,1  ,250       ,125       
+		Armband_SK                              ,1  ,250       ,125       
+		Armband_SI                              ,1  ,250       ,125       
+		Armband_ES                              ,1  ,250       ,125       
+		Armband_SE                              ,1  ,250       ,125       
+		Armband_NO                              ,1  ,250       ,125       
+		Armband_CH                              ,1  ,250       ,125       
+		Armband_TR                              ,1  ,250       ,125       
+		Armband_CZ                              ,1  ,250       ,125       
+		Armband_BY                              ,1  ,250       ,125       
+		Armband_RU                              ,1  ,250       ,125       
+		Armband_IQ                              ,1  ,250       ,125       
+		Armband_IR                              ,1  ,250       ,125       
+		Armband_AF                              ,1  ,250       ,125       
+		Armband_SA                              ,1  ,250       ,125       
+		Armband_UA                              ,1  ,250       ,125       
+		Armband_KZ                              ,1  ,250       ,125       
+		Armband_AU                              ,1  ,250       ,125       
+		Armband_IN                              ,1  ,250       ,125       
+		Armband_GB                              ,1  ,250       ,125       
+		Armband_SCT                             ,1  ,250       ,125       
+		Armband_AL                              ,1  ,250       ,125       
+		Armband_PK                              ,1  ,250       ,125       
+		Armband_US                              ,1  ,250       ,125       
+		Armband_AR                              ,1  ,250       ,125       
+		Armband_CA                              ,1  ,250       ,125       
+		Armband_CN                              ,1  ,250       ,125       
+		Armband_JP                              ,1  ,250       ,125       
+		Armband_SG                              ,1  ,250       ,125       
+		Armband_PH                              ,1  ,250       ,125       
+		Armband_TH                              ,1  ,250       ,125       
+		Armband_MY                              ,1  ,250       ,125       
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Union names                             ,W  ,-1        ,-1        
+	
+		Armband_NATO                            ,1  ,250       ,125       
+		Armband_EU                              ,1  ,250       ,125       
+	-edit- //done -jdog
+<Trader> Vehicles Trader
+	<Category> Vehicles
+		#x9                                     ,W  ,-1        ,-1        
+		---Vehicles spawn fully equiped---,             W,      -1,          -1
+		Atv                                     ,VNK,10000     ,5000      
+		-The ATV will not spawn with a key so be wary !,             W,      -1,          -1
+		-Small Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		OffroadHatchback                        ,V  ,20000     ,10000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Hatchback_02                            ,V  ,20000     ,10000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		CivilianSedan                           ,V  ,20000     ,10000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		uazSoba                                 ,V  ,30000     ,15000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		CrSk_Land_Rover_Defender_110            ,V  ,35000     ,15000     
+		CrSk_Land_Rover_Defender_110_Green      ,V  ,35000     ,15000     
+		CrSk_Land_Rover_Defender_110_UN         ,V  ,35000     ,15000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		CrSk_BMW_525i_E34                       ,V  ,60000     ,30000     
+		CrSk_BMW_525i_E34_Red                   ,V  ,60000     ,25000     
+		CrSk_BMW_525i_E34_Black                 ,V  ,60000     ,30000     
+		CrSk_BMW_525i_E34_Beater                ,V  ,60000     ,30000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		sobgaz                                  ,V  ,60000     ,30000     
+		sobgaz_Plat                             ,V  ,60000     ,30000     
+		-Large Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> Keys
+		VehicleKeyDuplicate                     ,K  ,2000      ,-1        
+	
+	<Category> Vehicle Parts
+		HeadlightH7_Box                         ,*  ,30        ,15        
+		SparkPlug                               ,*  ,100       ,50        
+		EngineOil                               ,*  ,70        ,40        
+		CarBattery                              ,*  ,200       ,50        
+		TruckBattery                            ,*  ,180       ,100       
+		CarRadiator                             ,*  ,200       ,100       
+		TireRepairKit                           ,*  ,220       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> ATV Parts
+		SparkPlug                               ,*  ,100       ,50        
+		CarBattery                              ,*  ,200       ,50        
+		CarRadiator                             ,*  ,200       ,100       
+		HeadlightH7                             ,*  ,220       ,100       
+		HeadlightH7                             ,*  ,220       ,100       
+		AtvWheel                                ,*  ,220       ,100       
+		AtvWheel_small                          ,*  ,220       ,100       
+		AtvWheel_monster                        ,*  ,220       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> HatchBack Parts
+		HatchbackHood                           ,*  ,300       ,100       
+		HatchbackTrunk                          ,*  ,380       ,130       
+		HatchbackDoors_Driver                   ,*  ,450       ,160       
+		HatchbackDoors_CoDriver                 ,*  ,450       ,160       
+		HatchbackWheel                          ,*  ,500       ,100       
+		Hatchback_02_Door_1_1                   ,*  ,450       ,160       
+		Hatchback_02_Door_1_2                   ,*  ,450       ,160       
+		Hatchback_02_Door_2_1                   ,*  ,450       ,160       
+		Hatchback_02_Door_2_2                   ,*  ,450       ,160       
+		Hatchback_02_Hood                       ,*  ,300       ,100       
+		Hatchback_02_Trunk                      ,*  ,380       ,130       
+		Hatchback_02_Wheel                      ,*  ,500       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+	
+	<Category> Sedan Parts
+		CivSedanHood                            ,*  ,400       ,140       
+		CivSedanTrunk                           ,*  ,450       ,150       
+		CivSedanDoors_Driver                    ,*  ,500       ,180       
+		CivSedanDoors_CoDriver                  ,*  ,500       ,180       
+		CivSedanDoors_BackLeft                  ,*  ,500       ,180       
+		CivSedanDoors_BackRight                 ,*  ,500       ,180       
+		CivSedanWheel                           ,*  ,600       ,120       
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> 4x4 UAZ
+		Uaz_Hood                                ,*  ,200       ,100       
+		Uaz_Driver                              ,*  ,200       ,100       
+		Uaz_CoDriver                            ,*  ,200       ,100       
+		Uaz_Cargo1                              ,*  ,200       ,100       
+		Uaz_Cargo2                              ,*  ,200       ,100       
+		uazWheel                                ,*  ,200       ,100       
+		
+	<Category> Land Rover Parts
+		Defender110_koleso                      ,*  ,510       ,100       
+		Defender110_dver_1_1                    ,*  ,250       ,100       
+		Defender110_dver_2_1                    ,*  ,250       ,100       
+		Defender110_dver_1_2                    ,*  ,250       ,100       
+		Defender110_dver_2_2                    ,*  ,250       ,100       
+		Defender110_kapot                       ,*  ,510       ,100       
+		Defender110_bagazhnik                   ,*  ,250       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+		Defender110_koleso                      ,*  ,510       ,100       
+		Defender110_dver_1_1_Green              ,*  ,250       ,100       
+		Defender110_dver_2_1_Green              ,*  ,250       ,100       
+		Defender110_dver_1_2_Green              ,*  ,250       ,100       
+		Defender110_dver_2_2_Green              ,*  ,250       ,100       
+		Defender110_kapot_Green                 ,*  ,250       ,100       
+		Defender110_bagazhnik_Green             ,*  ,250       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+		Defender110_koleso                      ,*  ,510       ,100       
+		Defender110_dver_1_1_UN                 ,*  ,250       ,100       
+		Defender110_dver_2_1_UN                 ,*  ,250       ,100       
+		Defender110_dver_1_2_UN                 ,*  ,250       ,100       
+		Defender110_dver_2_2_UN                 ,*  ,250       ,100       
+		Defender110_kapot_UN                    ,*  ,250       ,100       
+		Defender110_bagazhnik_UN                ,*  ,250       ,100       
+		
+		
+	<Category> BMW Parts
+		BMWE34_kapot                            ,*  ,2500      ,1000      
+		BMWE34_bagazhnik                        ,*  ,2500      ,1000      
+		BMWE34_dver_1_1                         ,*  ,2500      ,1000      
+		BMWE34_dver_2_1                         ,*  ,2500      ,1000      
+		BMWE34_dver_1_2                         ,*  ,2500      ,1000      
+		BMWE34_dver_2_2                         ,*  ,2500      ,1000      
+		BMWE34_koleso_style5                    ,*  ,1000      ,750       
+		#x9                                     ,W  ,-1        ,-1        
+		
+		BMWE34_kapot_red                        ,*  ,2500      ,1000      
+		BMWE34_bagazhnik_red                    ,*  ,2500      ,1000      
+		BMWE34_dver_1_1_red                     ,*  ,2500      ,1000      
+		BMWE34_dver_2_1_red                     ,*  ,2500      ,1000      
+		BMWE34_dver_1_2_red                     ,*  ,2500      ,1000      
+		BMWE34_dver_2_2_red                     ,*  ,2500      ,1000      
+		BMWE34_koleso_style2                    ,*  ,1000      ,750       
+		#x9                                     ,W  ,-1        ,-1        
+		
+		BMWE34_kapot_black                      ,*  ,2500      ,1000      
+		BMWE34_bagazhnik_black                  ,*  ,2500      ,1000      
+		BMWE34_dver_1_1_black                   ,*  ,2500      ,1000      
+		BMWE34_dver_2_1_black                   ,*  ,2500      ,1000      
+		BMWE34_dver_1_2_black                   ,*  ,2500      ,1000      
+		BMWE34_dver_2_2_black                   ,*  ,2500      ,1000      
+		BMWE34_koleso_style16                   ,*  ,1000      ,750       
+		#x9                                     ,W  ,-1        ,-1        
+		
+		BMWE34_kapot_beater                     ,*  ,2500      ,1000      
+		BMWE34_bagazhnik_beater                 ,*  ,2500      ,1000      
+		BMWE34_dver_1_1_beater                  ,*  ,2500      ,1000      
+		BMWE34_dver_2_1_beater                  ,*  ,2500      ,1000      
+		BMWE34_dver_1_2_beater                  ,*  ,2500      ,1000      
+		BMWE34_dver_2_2_beater                  ,*  ,2500      ,1000      
+		BMWE34_koleso_style21                   ,*  ,1000      ,750       
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> GAZ Trucks
+		gazDoors_Driver                         ,*  ,500       ,100       
+		gazDoors_CoDriver                       ,*  ,500       ,100       
+		gazWheel                                ,*  ,200       ,100       
+		
+		
+
+-edit-//done -jt
+<Trader> BM Vehicles Trader
+	<Category> Vehicles
+		#x9                                     ,W  ,-1        ,-1        
+		---Vehicles spawn fully equiped---,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MRAP_4x4                                ,V  ,100000    ,50000     
+		MRAP_SWAT                               ,V  ,100000    ,50000     
+		-Large Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		mike_Tigr                               ,V  ,80000     ,40000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Hmwvee                                  ,V  ,17500     ,4000      
+		Hmwvee_Automn                           ,V  ,60000     ,30000     
+		Hmwvee_Desert                           ,V  ,60000     ,30000     
+		Hmwvee_Olive                            ,V  ,60000     ,30000     
+		Hmwvee_34                               ,V  ,60000     ,30000     
+		-Medium Inventory Space,             W,      -1,          -1
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> Keys
+		VehicleKeyDuplicate                     ,K  ,2000      ,-1        
+		
+	<Category> Vehicle Parts
+		HeadlightH7_Box                         ,*  ,30        ,15        
+		SparkPlug                               ,*  ,100       ,50        
+		EngineOil                               ,*  ,70        ,40        
+		CarBattery                              ,*  ,200       ,50        
+		TruckBattery                            ,*  ,180       ,100       
+		CarRadiator                             ,*  ,200       ,100       
+		TireRepairKit                           ,*  ,220       ,100       
+		
+	<Category> MRAP Parts
+		mrap_wheel                              ,*  ,225       ,100       
+		mrap_doors_driver                       ,*  ,225       ,100       
+		mrap_doors_codriver                     ,*  ,225       ,100       
+		mrap_doors_cargo1                       ,*  ,225       ,100       
+		mrap_doors_cargo2                       ,*  ,225       ,100       
+		mrap_doors_trunk                        ,*  ,225       ,100       
+		mrap_doors_hood                         ,*  ,225       ,100       
+		#x9                                     ,W  ,-1        ,-1        
+		mrap_wheel                              ,*  ,225       ,100       
+		mrap_swat_doors_driver                  ,*  ,225       ,100       
+		mrap_swat_doors_codriver                ,*  ,225       ,100       
+		mrap_swat_doors_cargo1                  ,*  ,225       ,100       
+		mrap_swat_doors_cargo2                  ,*  ,225       ,100       
+		mrap_swat_doors_trunk                   ,*  ,225       ,100       
+		mrap_swat_doors_hood                    ,*  ,225       ,100       
+		
+	<Category> GAZ Tigr
+		tigrDoors_Driver                        ,*  ,1500      ,125       
+		tigrDoors_CoDriver                      ,*  ,1500      ,125       
+		tigrDoors_Cargo1                        ,*  ,1500      ,125       
+		tigrDoors_Cargo2                        ,*  ,1500      ,125       
+		tigrDoors_Hood                          ,*  ,1500      ,125       
+		tigrWheel                               ,*  ,500       ,75        
+		
+
+	<Category> Humvee Parts
+		Hmwvee_34_hood                          ,*  ,500       ,75        
+		HmwveeDoors_34_Driver                   ,*  ,500       ,75        
+		HmwveeDoors_34_CoDriver                 ,*  ,500       ,75        
+		HmwveeDoors_34_Cargo1                   ,*  ,500       ,75        
+		HmwveeDoors_34_Cargo2                   ,*  ,500       ,75        
+		HmwveeWheel                             ,*  ,500       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Hmwvee_hood                             ,*  ,500       ,75        
+		HmwveeDoors_Driver                      ,*  ,500       ,75        
+		HmwveeDoors_CoDriver                    ,*  ,500       ,75        
+		HmwveeDoors_Cargo1                      ,*  ,500       ,75        
+		HmwveeDoors_Cargo2                      ,*  ,500       ,75        
+		HmwveeWheel                             ,*  ,500       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Hmwvee_olive_hood                       ,*  ,500       ,75        
+		HmwveeDoors_olive_Driver                ,*  ,500       ,75        
+		HmwveeDoors_olive_CoDriver              ,*  ,500       ,75        
+		HmwveeDoors_olive_Cargo1                ,*  ,500       ,75        
+		HmwveeDoors_olive_Cargo2                ,*  ,500       ,75        
+		HmwveeWheel                             ,*  ,500       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Hmwvee_desert_hood                      ,*  ,500       ,75        
+		HmwveeDoors_desert_Driver               ,*  ,500       ,75        
+		HmwveeDoors_desert_CoDriver             ,*  ,500       ,75        
+		HmwveeDoors_desert_Cargo1               ,*  ,500       ,75        
+		HmwveeDoors_desert_Cargo2               ,*  ,500       ,75        
+		HmwveeWheel                             ,*  ,500       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		Hmwvee_automn_hood                      ,*  ,500       ,75        
+		HmwveeDoors_automn_Driver               ,*  ,500       ,75        
+		HmwveeDoors_automn_CoDriver             ,*  ,500       ,75        
+		HmwveeDoors_automn_Cargo1               ,*  ,500       ,75        
+		HmwveeDoors_automn_Cargo2               ,*  ,500       ,75        
+		HmwveeWheel                             ,*  ,500       ,75        
+		#x9                                     ,W  ,-1        ,-1        
+		
+-edit- AMMO AND MAGS, (ammo is 1 bullet and mags is empty)
+<Trader> BM Gun Trader
+	<Category> Shotguns and Pistols
+		A2AA12                                  ,W  ,10000     ,3000      
+		A2AA12_Magazine                         ,M  ,500       ,300       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_DesertEagle                          ,W  ,1000      ,600       
+		Mag_DesertEagle_9rnd                    ,M  ,400       ,100       
+		Ammo_50AE                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+	<Category> Assault Rifles
+		FAL                                     ,W  ,10000     ,1500      
+		Mag_FAL_20Rnd                           ,M  ,600       ,300       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Scar_H                                  ,W  ,15000     ,3000      
+		Scar_H_Mag                              ,M  ,700       ,300       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2mk17                                  ,W  ,15000     ,3000      
+		A2mk17_s                                ,W  ,15000     ,300       
+		A2mk17_mag                              ,M  ,700       ,300       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassAR15                                ,W  ,3700      ,1000      
+		Mass9x39Palm                            ,W  ,600       ,200       
+		Ammo_9x39                               ,1  ,-1        ,-1        
+		Ammo_9x39AP                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> Light Machine Guns
+		RPK                                     ,W  ,20000     ,5000      
+		RPK_magazine                            ,M  ,1000      ,400       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M240                                  ,W  ,20000     ,10000     
+		m240_magazine                           ,M  ,1300      ,1000      
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2MK48                                  ,W  ,20000     ,10000     
+		A2MK48_Magazine                         ,M  ,1200      ,600       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M249                                  ,W  ,17000     ,8000      
+		A2M249_Magazine                         ,M  ,1000      ,500       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2PKM                                   ,W  ,18000     ,9000      
+		A2PKM_Magazine                          ,M  ,1700      ,1000      
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+	
+	<Category> Sniper Rifles
+	
+		WE_M14                                  ,W  ,10000     ,3000      
+		Mag_M14_20rnd                           ,M  ,500       ,250       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M14                                     ,W  ,10000     ,3000      
+		Mag_M14_10Rnd                           ,W  ,350       ,100       
+		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M14_DMR                               ,W  ,10000     ,3000      
+		A2M14_DMRMAG                            ,M  ,500       ,250       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M1A                                     ,W  ,10000     ,3000      
+		Mag_M14_10Rnd                           ,W  ,350       ,100       
+		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+		SVD                                     ,W  ,5000      ,1500      
+		WinterGear_SVD                          ,W  ,5000      ,1500      
+		Mag_SVD_10RND                           ,M  ,300       ,100       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		VSS                                     ,W  ,8000      ,3000      
+		Mag_VSS_10Rnd                           ,M  ,400       ,200       
+		Ammo_9x39                               ,1  ,-1        ,-1        
+		Ammo_9x39AP                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Barret                                  ,W  ,25000     ,10000     
+		Barret_Green                            ,W  ,25000     ,10000     
+		Barret_Tan                              ,W  ,25000     ,10000     
+		Barret_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M200                                    ,W  ,25000     ,10000     
+		m200_Magazine                           ,M  ,1000      ,500       
+		Ammo_408                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		AWMreal                                 ,W  ,25000     ,10000     
+		Mag_AWMreal_5Rnd                        ,M  ,1000      ,500       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2WM110_desert                          ,W  ,20000     ,10000     
+		A2WM110_black                           ,W  ,20000     ,10000     
+		A2WM110_mag                             ,M  ,800       ,400       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2AS50                                  ,W  ,27000     ,12000     
+		A2AS50_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M107                                  ,W  ,25000     ,10000     
+		A2M107_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M40A3                                 ,W  ,20000     ,10000     
+		A2M40A3_Magazine                        ,M  ,700       ,300       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M24_Desert                            ,W  ,20000     ,10000     
+		A2M24_Green                             ,W  ,20000     ,10000     
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M24A3                                ,W  ,12000     ,6000      
+		Mag_M24A3_5rnd                          ,M  ,800       ,400       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M82                                  ,W  ,20000     ,10000     
+		Mag_M82_10rnd                           ,M  ,1500      ,500       
+		Ammo_127x99                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_SSG69                                ,W  ,8000      ,3000      
+		Mag_SSG69_5rnd                          ,M  ,100       ,50        
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_PSG1                                 ,W  ,8000      ,1000      
+		Mag_PSG1_20rnd                          ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassKivaari                             ,W  ,25000     ,10000     
+		kivaarimag                              ,M  ,600       ,200       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Massm300                                ,W  ,30000     ,15000     
+		Massm300_camo                           ,W  ,30000     ,15000     
+		Massm300mag                             ,W  ,1000      ,100       
+		Ammo_408Chey                            ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassM110                                ,W  ,15000     ,7000      
+		Mass308STANAG                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+-edit-
+<Trader> BM Clothing Trader
+	<Category> Armour
+		MassHeavyPlateVest_ODG                  ,*  ,10000     ,4000      
+		MassHeavyPlateVest_Winter               ,*  ,10000     ,4000      
+		MassHeavyPlateVest_Black                ,*  ,10000     ,4000      
+		MassHeavyPlateVest_PartizanM            ,*  ,10000     ,4000      
+		MassHeavyPlateVest_Beige                ,*  ,10000     ,4000      
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassRatnik                              ,*  ,15000     ,6000      
+		MassRatnik_Black                        ,*  ,15000     ,6000      
+		MassRatnik_Tan                          ,*  ,15000     ,6000      
+		You can not sprint. Best for base defence !,W  ,-1        ,-1        
+	-edit-
+	<Category> Ghillie
+		// Keep in Mind that Players can also 
+		// craft Ghillie Clothing and sell them!
+		GhillieAtt_Mossy                        ,*  ,1200      ,100       
+		GhillieAtt_Tan                          ,*  ,1200      ,100       
+		GhillieAtt_Woodland                     ,*  ,1200      ,100       
+		GhillieHood_Mossy                       ,*  ,1200      ,100       
+		GhillieHood_Tan                         ,*  ,1200      ,100       
+		GhillieHood_Woodland                    ,*  ,1200      ,100       
+		GhillieBushrag_Mossy                    ,*  ,2000      ,200       
+		GhillieBushrag_Tan                      ,*  ,2000      ,200       
+		GhillieBushrag_Woodland                 ,*  ,2000      ,200       
+		GhillieTop_Mossy                        ,*  ,2300      ,400       
+		GhillieTop_Tan                          ,*  ,2300      ,400       
+		GhillieTop_Woodland                     ,*  ,2300      ,400       
+		GhillieSuit_Mossy                       ,*  ,3500      ,500       
+		GhillieSuit_Tan                         ,*  ,3500      ,500       
+		GhillieSuit_Woodland                    ,*  ,3500      ,500       
+		
+		--
+		MassGhillieSuitWoodland                 ,*  ,3500      ,500       
+		MassGhillieSuitMossy                    ,*  ,3500      ,500       
+		MassGhillieSuitSnow                     ,*  ,3600      ,500       
+		MassGhillieTopWoodland                  ,*  ,2300      ,400       
+		MassGhillieTopMossy                     ,*  ,2300      ,400       
+		MassGhillieTopSnow                      ,*  ,2400      ,400       
+		MassGhillieHood_Woodland                ,*  ,1200      ,100       
+		MassGhillieHood_Snowy                   ,*  ,1200      ,100       
+		MassGhillieHoodMossy                    ,*  ,1200      ,100       
+		MassGhillieSuitBoxWoodland              ,*  ,4800      ,500       
+		MassGhillieSuitBoxMossy                 ,*  ,4800      ,500       
+		MassGhillieSuitBoxWinter                ,*  ,4800      ,500       
+		MassGhillieTopBoxWoodland               ,*  ,3600      ,500       
+		MassGhillieTopBoxWinter                 ,*  ,-1        ,-1        
+		MassGhillieTopBoxMossy                  ,*  ,3600      ,500       
+		MassWinterGhillieWrap                   ,*  ,1200      ,100       
+	
+
+-edit- No buy price, copy sell price from blackmarket gun dealer
+<Trader> Blackmarket Dealer
+
+		<Category> Shotguns and Pistols
+		A2AA12                                  ,W  ,-1        ,3000      
+		A2AA12_Magazine                         ,M  ,500       ,300       
+		Ammo_12gaPellets                        ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+
+		WE_DesertEagle                          ,W  ,-1        ,600       
+		Mag_DesertEagle_9rnd                    ,M  ,400       ,100       
+		Ammo_50AE                               ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+	<Category> Assault Rifles
+		FAL                                     ,W  ,-1        ,1500      
+		Mag_FAL_20Rnd                           ,M  ,600       ,300       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Scar_H                                  ,W  ,-1        ,3000      
+		Scar_H_Mag                              ,M  ,700       ,300       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2mk17                                  ,W  ,-1        ,3000      
+		A2mk17_s                                ,W  ,-1        ,300       
+		A2mk17_mag                              ,M  ,700       ,300       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassAR15                                ,W  ,-1        ,1000      
+		Mass9x39Palm                            ,W  ,600       ,200       
+		Ammo_9x39                               ,1  ,-1        ,-1        
+		Ammo_9x39AP                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+	<Category> Light Machine Guns
+		RPK                                     ,W  ,-1        ,5000      
+		RPK_magazine                            ,M  ,1000      ,400       
+		Ammo_762x39                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M240                                  ,W  ,-1        ,10000     
+		m240_magazine                           ,M  ,1300      ,1000      
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2MK48                                  ,W  ,-1        ,10000     
+		A2MK48_Magazine                         ,M  ,1200      ,600       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M249                                  ,W  ,-1        ,8000      
+		A2M249_Magazine                         ,M  ,1000      ,500       
+		Ammo_556x45                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2PKM                                   ,W  ,-1        ,9000      
+		A2PKM_Magazine                          ,M  ,1700      ,1000      
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+	
+	<Category> Sniper Rifles
+	
+		WE_M14                                  ,W  ,-1        ,3000      
+		Mag_M14_20rnd                           ,M  ,500       ,250       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M14                                     ,W  ,-1        ,3000      
+		Mag_M14_10Rnd                           ,W  ,350       ,100       
+		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M14_DMR                               ,W  ,-1        ,3000      
+		A2M14_DMRMAG                            ,M  ,500       ,250       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M1A                                     ,W  ,-1        ,3000      
+		Mag_M14_10Rnd                           ,W  ,350       ,100       
+		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+	
+		SVD                                     ,W  ,-1        ,1500      
+		WinterGear_SVD                          ,W  ,-1        ,1500      
+		Mag_SVD_10RND                           ,M  ,300       ,100       
+		Ammo_762x54                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		VSS                                     ,W  ,-1        ,3000      
+		Mag_VSS_10Rnd                           ,M  ,400       ,200       
+		Ammo_9x39                               ,1  ,-1        ,-1        
+		Ammo_9x39AP                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Barret                                  ,W  ,-1        ,10000     
+		Barret_Green                            ,W  ,-1        ,10000     
+		Barret_Tan                              ,W  ,-1        ,10000     
+		Barret_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		M200                                    ,W  ,-1        ,10000     
+		m200_Magazine                           ,M  ,1000      ,500       
+		Ammo_408                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		AWMreal                                 ,W  ,-1        ,10000     
+		Mag_AWMreal_5Rnd                        ,M  ,1000      ,500       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2WM110_desert                          ,W  ,-1        ,10000     
+		A2WM110_black                           ,W  ,-1        ,10000     
+		A2WM110_mag                             ,M  ,800       ,400       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2AS50                                  ,W  ,-1        ,12000     
+		A2AS50_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M107                                  ,W  ,-1        ,10000     
+		A2M107_Magazine                         ,M  ,1000      ,500       
+		Ammo_50Cal                              ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M40A3                                 ,W  ,-1        ,10000     
+		A2M40A3_Magazine                        ,M  ,700       ,300       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		A2M24_Desert                            ,W  ,-1        ,10000     
+		A2M24_Green                             ,W  ,-1        ,10000     
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M24A3                                ,W  ,-1        ,6000      
+		Mag_M24A3_5rnd                          ,M  ,800       ,400       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_M82                                  ,W  ,-1        ,10000     
+		Mag_M82_10rnd                           ,M  ,1500      ,500       
+		Ammo_127x99                             ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_SSG69                                ,W  ,-1        ,3000      
+		Mag_SSG69_5rnd                          ,M  ,100       ,50        
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		WE_PSG1                                 ,W  ,-1        ,1000      
+		Mag_PSG1_20rnd                          ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassKivaari                             ,W  ,-1        ,10000     
+		kivaarimag                              ,M  ,600       ,200       
+		Ammo_338                                ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		Massm300                                ,W  ,-1        ,15000     
+		Massm300_camo                           ,W  ,-1        ,15000     
+		Massm300mag                             ,W  ,1000      ,100       
+		Ammo_408Chey                            ,1  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		MassM110                                ,W  ,-1        ,7000      
+		Mass308STANAG                           ,M  ,500       ,200       
+		Ammo_308Win                             ,*  ,-1        ,-1        
+		#x9                                     ,W  ,-1        ,-1        
+		
+		<Category> Armour
+		MassHeavyPlateVest_ODG                  ,*  ,-1        ,4000      
+		MassHeavyPlateVest_Winter               ,*  ,-1        ,4000      
+		MassHeavyPlateVest_Black                ,*  ,-1        ,4000      
+		MassHeavyPlateVest_PartizanM            ,*  ,-1        ,4000      
+		MassHeavyPlateVest_Beige                ,*  ,-1        ,4000      
+		#x9                                     ,W  ,-1        ,-1        
+		
+		
+		MassRatnik                              ,*  ,-1        ,6000      
+		MassRatnik_Black                        ,*  ,-1        ,6000      
+		MassRatnik_Tan                          ,*  ,-1        ,6000      
+		You can not sprint. Best for base defence !,W  ,-1        ,-1        
+	-ed                            -edit-
+	<Category> Ghillie
+		// Keep in Mind that Players can also 
+		// craft Ghillie Clothing and sell them!
+		GhillieAtt_Mossy                        ,*  ,-1        ,100       
+		GhillieAtt_Tan                          ,*  ,-1        ,100       
+		GhillieAtt_Woodland                     ,*  ,-1        ,100       
+		GhillieHood_Mossy                       ,*  ,-1        ,100       
+		GhillieHood_Tan                         ,*  ,-1        ,100       
+		GhillieHood_Woodland                    ,*  ,-1        ,100       
+		GhillieBushrag_Mossy                    ,*  ,-1        ,200       
+		GhillieBushrag_Tan                      ,*  ,-1        ,200       
+		GhillieBushrag_Woodland                 ,*  ,-1        ,200       
+		GhillieTop_Mossy                        ,*  ,-1        ,400       
+		GhillieTop_Tan                          ,*  ,-1        ,400       
+		GhillieTop_Woodland                     ,*  ,-1        ,400       
+		GhillieSuit_Mossy                       ,*  ,-1        ,500       
+		GhillieSuit_Tan                         ,*  ,-1        ,500       
+		GhillieSuit_Woodland                    ,*  ,-1        ,500       
+			
+		--
+		MassGhillieSuitWoodland                 ,*  ,-1        ,500       
+		MassGhillieSuitMossy                    ,*  ,-1        ,500       
+		MassGhillieSuitSnow                     ,*  ,-1        ,500       
+		MassGhillieTopWoodland                  ,*  ,-1        ,400       
+		MassGhillieTopMossy                     ,*  ,-1        ,400       
+		MassGhillieTopSnow                      ,*  ,-1        ,400       
+		MassGhillieHood_Woodland                ,*  ,-1        ,100       
+		MassGhillieHood_Snowy                   ,*  ,-1        ,100       
+		MassGhillieHoodMossy                    ,*  ,-1        ,100       
+		MassGhillieSuitBoxWoodland              ,*  ,-1        ,500       
+		MassGhillieSuitBoxMossy                 ,*  ,-1        ,500       
+		MassGhillieSuitBoxWinter                ,*  ,-1        ,500       
+		MassGhillieTopBoxWoodland               ,*  ,-1        ,500       
+		MassGhillieTopBoxWinter                 ,*  ,-1        ,-1        
+		MassGhillieTopBoxMossy                  ,*  ,-1        ,500       
+		MassWinterGhillieWrap                   ,*  ,-1        ,100       
+
+		
+<FileEnd>												// This has to be on the End of this File and is very importand!
