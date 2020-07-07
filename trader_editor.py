@@ -364,4 +364,7 @@ print("{0:^100}".format("If you can any questions, feel free to join our Discord
 print("{0:^100}".format("https://discord.gg/a2SZD3D"))
 set_color('')
 os.system("pause")
+
+class trader_editor():
+	pass
     
