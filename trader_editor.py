@@ -366,5 +366,12 @@ set_color('')
 os.system("pause")
 
 class trader_editor():
-	pass
+	def __init__():
+	self.editted_file = dict()
+    self.items = defaultdict(int)
+    self.buy_costs = defaultdict(list)
+    self.sell_costs = defaultdict(list)
+    self.trader_category = dict()
+    self.line_num = 0
+    self.price_errors = []
     
