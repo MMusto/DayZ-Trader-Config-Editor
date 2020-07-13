@@ -375,30 +375,31 @@ class trader_editor():
     self.line_num = 0
     self.price_errors = []
 	
-	def run():
-	while choice not in ('5', 'quit', 'exit'):
-		os.system("cls")
-		set_color('0A')
-		parse(TRADER_FILENAME)
-		
-		if choice == '1':
-			write_errors(ERRORS_FILENAME)
-			print("\n[INFO] Success.")
-		elif choice == '2':
-			fix_errors()
+	def run(self):
+		while choice not in ('5', 'quit', 'exit'):
 			os.system("cls")
-			print("\nNo more errors.")
-		elif choice == '3':
-			if not get_item_details(input("Please enter the item name you are looking for: ")):
-				print("\nSorry, that item was not found.")
-			else:
-				os.system("cls")
+			set_color('0A')
+			parse(TRADER_FILENAME)
+			
+			if choice == '1':
+				write_errors(ERRORS_FILENAME)
 				print("\n[INFO] Success.")
-		elif choice == '4':
-			if not modify_item(input("Please enter the item name you want to modify: ")):
-				print("\nSorry, that item was not found.")
-			else:
+			elif choice == '2':
+				fix_errors()
 				os.system("cls")
-				print("\n[INFO] Success.")
-		choice = get_choice()
+				print("\nNo more errors.")
+			elif choice == '3':
+				if not get_item_details(input("Please enter the item name you are looking for: ")):
+					print("\nSorry, that item was not found.")
+				else:
+					os.system("cls")
+					print("\n[INFO] Success.")
+			elif choice == '4':
+				if not modify_item(input("Please enter the item name you want to modify: ")):
+					print("\nSorry, that item was not found.")
+				else:
+					os.system("cls")
+					print("\n[INFO] Success.")
+			choice = get_choice()
+	
     
