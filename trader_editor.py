@@ -28,15 +28,7 @@ def yes(string):
         return True
     return False
     
-def parse(filename):
-    global editted_file
-    global items
-    global buy_costs
-    global sell_costs
-    global trader_category
-    global line_num
-    global price_errors
-    
+def parse(self, filename):
     del editted_file
     del items
     del buy_costs
@@ -374,6 +366,9 @@ class trader_editor():
     self.trader_category = dict()
     self.line_num = 0
     self.price_errors = []
+	
+	def get_choice():
+		
 	
 	def run(self):
 		while choice not in ('5', 'quit', 'exit'):
