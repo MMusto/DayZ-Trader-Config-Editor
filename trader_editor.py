@@ -1,47 +1,14 @@
 from collections import defaultdict
 import os
 
-def set_color(color):
-    os.system('color {}'.format(color))
 
 TRADER_FILENAME = "trader.txt"
 ERRORS_FILENAME = "errors.txt"
 
-
-    
 os.system("mode con: cols=150 lines=55")
 os.system("cls")
 set_color('0A')
 os.system("TITLE STS Trader Editor")
-choice = get_choice()
-while choice not in ('5', 'quit', 'exit'):
-
-    os.system("cls")
-    set_color('0A')
-    parse(TRADER_FILENAME)
-    
-    if choice == '1':
-        write_errors(ERRORS_FILENAME)
-        print("\n[INFO] Success.")
-    elif choice == '2':
-        fix_errors()
-        os.system("cls")
-        print("\nNo more errors.")
-    elif choice == '3':
-        if not get_item_details(input("Please enter the item name you are looking for: ")):
-            print("\nSorry, that item was not found.")
-        else:
-            os.system("cls")
-            print("\n[INFO] Success.")
-    elif choice == '4':
-        if not modify_item(input("Please enter the item name you want to modify: ")):
-            print("\nSorry, that item was not found.")
-        else:
-            os.system("cls")
-            print("\n[INFO] Success.")
-    choice = get_choice()
-    
-
 
 class trader_editor:
 	def __init__():
@@ -49,17 +16,22 @@ class trader_editor:
     self.items = defaultdict(int)
     self.buy_costs = defaultdict(list)
     self.sell_costs = defaultdict(list)
-    self.trader_category = dict()
+    self.sell_costs = dict()
     self.line_num = 0
     self.price_errors = []
+	
+		
+	def set_color(self, color):
+		os.system('color {}'.format(color))
+		
 	def all_same(self, l):
-    if len(l) == 0:
-        return True
-    s = l[0][0]
-    for c in l:
-        if c[0] != s:
-            return False
-    return True
+		if len(l) == 0:
+			return True
+		s = l[0][0]
+		for c in l:
+			if c[0] != s:
+				return False
+		return True
     
 	def yes(self, string):
 		if string.lower() in ("", "y","yes","yeah","yea"):
@@ -67,18 +39,18 @@ class trader_editor:
 		return False
 		
 	def parse(self, filename):
-		editted_file = dict()
-		items = defaultdict(int)
-		buy_costs = defaultdict(list)
-		sell_costs = defaultdict(list)
-		trader_category = dict()
-		line_num = 0
-		price_errors = []
+		self.editted_file = dict()
+		self.items = defaultdict(int)
+		self.buy_costs = defaultdict(list)
+		self.sell_costs = defaultdict(list)
+		self.sell_costs = dict()
+		self.line_num = 0
+		self.price_errors = []
 		
 		with open(filename, "r") as file:
 			#Parse and locally store data.
 			for line in file.readlines():
-				line_num += 1
+				self.line_num += 1
 				orig_line = line
 				line = line.strip('\t ')
 				if line.startswith("<"):
@@ -88,7 +60,7 @@ class trader_editor:
 						category = " ".join(line.split()[1:])
 				
 				if line.startswith("-") or line.startswith("/") or line.startswith('\t'):
-					editted_file[line_num] = orig_line
+					self.editted_file[self.line_num] = orig_line
 					continue
 				line = [item.strip('\t') for item in line.split(',')]
 				if len(line) == 4:
@@ -97,28 +69,28 @@ class trader_editor:
 					buy_price = line[2].strip()
 					sell_price = line[3].strip().split()[0].strip()
 					if int(sell_price) > int(buy_price) and buy_price != '-1':
-						price_errors.append(line_num)
+						self.price_errors.append(self.line_num)
 					
 					if item_name != '#x9':
-						items[item_name] += 1
-					trader_category[line_num] = (trader,category)
-					buy_costs[item_name].append((buy_price,line_num))
-					sell_costs[item_name].append((sell_price,line_num))
-					editted_file[line_num] = (item_name,capacity, buy_price, sell_price)
+						self.items[item_name] += 1
+					self.sell_costs[self.line_num] = (trader,category)
+					self.buy_costs[item_name].append((buy_price,self.line_num))
+					self.sell_costs[item_name].append((sell_price,self.line_num))
+					self.editted_file[self.line_num] = (item_name,capacity, buy_price, sell_price)
 					continue
-				editted_file[line_num] = orig_line
+				self.editted_file[self.line_num] = orig_line
 				
 	def write_errors(self, filename):
 		with open(filename, "w") as output:
-			if len(price_errors) > 0:
-				for line_n in price_errors:
-					item_name,capacity,buy_price,sell_price = editted_file[line_n]
+			if len(self.price_errors) > 0:
+				for line_n in self.price_errors:
+					item_name,capacity,buy_price,sell_price = self.editted_file[line_n]
 					print("[!] Price Error: {} | Buy Value = {} | Sell Value = {} | Line = {}".format(item_name, buy_price,sell_price, line_n))
 				  
-			for item_name, count in items.items():
+			for item_name, count in self.items.self.items():
 				if count > 1:
-					buy_prices = buy_costs[item_name]
-					sell_prices = sell_costs[item_name]
+					buy_prices = self.buy_costs[item_name]
+					sell_prices = self.sell_costs[item_name]
 					if not (all_same(buy_prices) and all_same(sell_prices)):          
 						print("-----------------------------------------------------------------------------------------------------------\n", file = output)
 						print("[!] Inconsistent Price Error: {} \n".format(item_name), file = output)
@@ -127,13 +99,13 @@ class trader_editor:
 							line_n = buys[1]
 							buy_price = buys[0]
 							sell_price = sells[0]
-							c_trader, c_category = trader_category[line_n]
+							c_trader, c_category = self.sell_costs[line_n]
 							print("{0:^30} | {1:^30} | Buy Price = {2:^6} | Sell Price = {3:^6}".format(c_trader, c_category, buy_price, sell_price), file = output)
 							
 	def write_output(self):
 		#output new trader to output.txt
 		with open(TRADER_FILENAME, "w") as new_file:
-			for line in editted_file.values():
+			for line in self.editted_file.values():
 				if type(line) is str:
 					new_file.write(line)
 				elif type(line) is tuple:
@@ -141,8 +113,8 @@ class trader_editor:
 				
 	def fix_errors(self):       
 		#Edit buy price > sell price error    
-		for line_n in price_errors:
-			item_name,capacity,buy_price,sell_price = editted_file[line_n]
+		for line_n in self.price_errors:
+			item_name,capacity,buy_price,sell_price = self.editted_file[line_n]
 			print("[!] Price Error: {} | Buy Value = {} | Sell Value = {}".format(item_name, buy_price,sell_price))
 			print("[INFO] Entering nothing will use the old value.")
 			new_buy_val = input("Enter new Buy Value: ")
@@ -151,13 +123,13 @@ class trader_editor:
 			new_sell_val = input("Enter new Sell Value: ")
 			if not new_sell_val:
 				new_sell_val = sell_price
-			editted_file[line_n] = (item_name, capacity, new_buy_val, new_sell_val)
+			self.editted_file[line_n] = (item_name, capacity, new_buy_val, new_sell_val)
 			
 		#Edit price inconsitencies in multiple locations/traders
-		for item_name, count in items.items():
+		for item_name, count in self.items.self.items():
 			if count > 1:
-				buy_prices = buy_costs[item_name]
-				sell_prices = sell_costs[item_name]
+				buy_prices = self.buy_costs[item_name]
+				sell_prices = self.sell_costs[item_name]
 				if not (all_same(buy_prices) and all_same(sell_prices)):
 					print("-----------------------------------------------------------------------------------------------------------\n")
 					print("\n [!] Inconsistent Price Error: {} \n".format(item_name))
@@ -166,7 +138,7 @@ class trader_editor:
 						line_n = buys[1]
 						buy_price = buys[0]
 						sell_price = sells[0]
-						c_trader, c_category = trader_category[line_n]
+						c_trader, c_category = self.sell_costs[line_n]
 						print("{0:<30} | {1:<30} | Buy Price = {2:<6} | Sell Price = {3:<6}".format(c_trader, c_category, buy_price, sell_price))
 					if(yes(input("\n\nWould you like to modify ALL buy and sell prices AT ONCE (set all buy/sell prices to be the same)? [Y/n]"))):
 						new_buy_val = None
@@ -179,14 +151,14 @@ class trader_editor:
 							if buys[1] != sells[1]:
 								assert(buys[1] == sells[1])
 							line_n = buys[1]
-							editted_file[line_n] = (item_name, editted_file[line_n][1], new_buy_val, new_sell_val)
+							self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
 					elif(yes(input("\n\nWould you like to modify EACH buy and sell price INDIVIDUALLY? [Y/n]"))):
 						for buys, sells in zip(buy_prices, sell_prices):
 							assert(buys[1] == sells[1])
 							line_n = buys[1]
 							buy_price = buys[0]
 							sell_price = sells[0]
-							c_trader, c_category = trader_category[line_n]
+							c_trader, c_category = self.sell_costs[line_n]
 							print("{0:<30} | {1:<30} | Buy Price = {2:<6} | Sell Price = {3:<6}".format(c_trader, c_category, buy_price, sell_price))
 							print("[INFO] Entering nothing will use the old value.")
 							new_buy_val = input("Enter new Buy Value : ")
@@ -195,7 +167,7 @@ class trader_editor:
 							new_sell_val = input("Enter new Sell Value: ")
 							if not new_sell_val:
 								new_sell_val = sell_price
-							editted_file[line_n] = (item_name, editted_file[line_n][1], new_buy_val, new_sell_val)
+							self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
 					cont = input("\nSave Progress? [Y/n/quit]")
 					if(yes(cont)):
 						write_output()
@@ -203,23 +175,23 @@ class trader_editor:
 						break
 
 	def get_item_details(self, item_name) -> bool:
-		global buy_costs
-		global sell_costs
-		global trader_category
-		if not buy_costs.get(item_name):
+		global self.buy_costs
+		global self.sell_costs
+		global self.sell_costs
+		if not self.buy_costs.get(item_name):
 			return False
 			
-		buy_prices = buy_costs[item_name]
-		sell_prices = sell_costs[item_name]    
+		buy_prices = self.buy_costs[item_name]
+		sell_prices = self.sell_costs[item_name]    
 		
 		for buys, sells in zip(buy_prices, sell_prices):
 			assert(buys[1] == sells[1])
 			
 			line_n = buys[1]
-			capacity = editted_file[line_n][1]
+			capacity = self.editted_file[line_n][1]
 			buy_price = buys[0]
 			sell_price = sells[0]
-			c_trader, c_category = trader_category[line_n]
+			c_trader, c_category = self.sell_costs[line_n]
 			
 			print("{0:^30} | {1:^30} | Capacity = {2:^2} | Buy Price = {3:^6} | Sell Price = {4:^6} | (Line: {5:^6}".format(c_trader, c_category, capacity, buy_price, sell_price, str(line_n) + ')'))
 			
@@ -229,14 +201,14 @@ class trader_editor:
 		return True
 		
 	def modify_item(self, item_name):
-		global buy_costs
-		global sell_costs
-		global trader_category
-		if not buy_costs.get(item_name):
+		global self.buy_costs
+		global self.sell_costs
+		global self.sell_costs
+		if not self.buy_costs.get(item_name):
 			return False
 			
-		buy_prices = buy_costs[item_name]
-		sell_prices = sell_costs[item_name]       
+		buy_prices = self.buy_costs[item_name]
+		sell_prices = self.sell_costs[item_name]       
 		
 		
 		for buys, sells in zip(buy_prices, sell_prices):
@@ -245,8 +217,8 @@ class trader_editor:
 			line_n = buys[1]
 			buy_price = buys[0]
 			sell_price = sells[0]
-			capacity = editted_file[line_n][1]
-			c_trader, c_category = trader_category[line_n]
+			capacity = self.editted_file[line_n][1]
+			c_trader, c_category = self.sell_costs[line_n]
 			print("\n \n ENTRY BEING MODIFIED:\n")
 			print("{0:^30} | {1:^30} | Capacity = {2:^2} | Buy Price = {3:^6} | Sell Price = {4:^6} | (Line: {5:^5}".format(c_trader, c_category, capacity, buy_price, sell_price, str(line_n)+')'))
 			
@@ -262,7 +234,7 @@ class trader_editor:
 			new_sell_val = input("Enter new SELL PRICE Value: ")
 			if not new_sell_val:
 				new_sell_val = sell_price
-			editted_file[line_n] = (item_name, new_capacity, new_buy_val, new_sell_val)
+			self.editted_file[line_n] = (item_name, new_capacity, new_buy_val, new_sell_val)
 			write_output()
 			
 		return True
