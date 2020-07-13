@@ -304,7 +304,7 @@
 		
 	<Category> Pistols
 		MKII                                    ,W  ,350       ,150       
-		Mag_MKII_10Rnd                          ,M  ,150       ,50        
+		Mag_MKII_10Rnd                          ,M  ,250       ,50        
 		Ammo_22                                 ,1  ,10        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 	
@@ -335,28 +335,28 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		P226                                    ,W  ,650       ,350       
-		P226_mag                                ,M  ,250       ,100       
+		P226_mag                                ,M  ,1         ,1         
 		Ammo_9x19                               ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		Mk22                                    ,W  ,650       ,350       
-		Mag_Mk22_14Rnd                          ,M  ,250       ,100       
+		Mag_Mk22_14Rnd                          ,M  ,1         ,1         
 		Ammo_9x19                               ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		StechkinAPS                             ,W  ,800       ,450       
 		APS_Buttstock                           ,W  ,100       ,50        
-		Mag_APS_20Rnd                           ,M  ,200       ,50        
+		Mag_APS_20Rnd                           ,M  ,200       ,1        
 		Ammo_380                                ,1  ,10        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2M9                                    ,W  ,650       ,350       
-		A2M9_Magazine                           ,M  ,250       ,100       
+		A2M9_Magazine                           ,M  ,1         ,1         
 		Ammo_9x19                               ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		WE_M9                                   ,W  ,650       ,350       
-		Mag_M9_15rnd                            ,M  ,250       ,100       
+		Mag_M9_15rnd                            ,M  ,1         ,1         
 		Ammo_9x19                               ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -398,7 +398,7 @@
 		
 		Saiga                                   ,W  ,1900      ,800       
 		Mag_Saiga_8Rnd                          ,M  ,300       ,100       
-		Mag_Saiga_Drum20Rnd                     ,M  ,600       ,100       
+		Mag_Saiga_Drum20Rnd                     ,M  ,1         ,1         
 		Ammo_12gaPellets                        ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -412,7 +412,7 @@
 		
 		UMP45                                   ,W  ,1500      ,550       
 		WinterGear_UMP                          ,W  ,1600      ,650       
-		Mag_UMP_25Rnd                           ,M  ,200       ,100       
+		Mag_UMP_25Rnd                           ,M  ,1         ,1         
 		Ammo_45ACP                              ,1  ,10        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -422,7 +422,7 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		MP7                                     ,W  ,1600      ,550       
-		Mag_MP7_40Rnd                           ,M  ,200       ,100       
+		Mag_MP7_40Rnd                           ,M  ,1         ,1         
 		Ammo_46x30                              ,1  ,10        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -432,7 +432,7 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2bizon                                 ,W  ,1600      ,1000      
-		bizon_magazine                          ,M  ,200       ,100       
+		bizon_magazine                          ,M  ,1         ,1         
 		Ammo_9x19                               ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -522,7 +522,7 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		MassB52                                 ,W  ,3700      ,1000      
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -530,12 +530,12 @@
 		
 		AKM                                     ,W  ,4000      ,750       
 		WinterGear_AKM                          ,W  ,4250      ,750       
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2AK74S                                 ,W  ,3900      ,1000      
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -545,17 +545,17 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		WE_STG44                                ,W  ,3700      ,1000      
-		Mag_STG44_30rnd                         ,M  ,300       ,100       
+		Mag_STG44_30rnd                         ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		AKS74U                                  ,W  ,3000      ,1000      
-		Mag_AK74_30RND                          ,M  ,300       ,100       
+		Mag_AK74_30RND                          ,M  ,1         ,1         
 		Ammo_545x39                             ,1  ,100       ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		AK74                                    ,W  ,3500      ,1000      
-		Mag_AK74_30RND                          ,M  ,300       ,100       
+		Mag_AK74_30RND                          ,M  ,1         ,1         
 		Ammo_545x39                             ,1  ,100       ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -565,17 +565,17 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		MassPpskn                               ,W  ,3700      ,1000      
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		MassType81                              ,W  ,3600      ,1000      
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2AKSGOLD                               ,W  ,9000      ,1000      
-		Mag_AKM_30RND                           ,M  ,400       ,200       
+		Mag_AKM_30RND                           ,M  ,1         ,1         
 		Ammo_762x39                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -645,34 +645,34 @@
 	<Category> Prefilled Magazines
 		#x9                                     ,W  ,-1        ,-1        
 		Pistols                                 ,W  ,-1        ,-1        
-		Mag_MKII_10Rnd                          ,*  ,200       ,50        
+		Mag_MKII_10Rnd                          ,*  ,250       ,50        
 		Mag_IJ70_8Rnd                           ,*  ,200       ,50        
 		Mag_Glock_15Rnd                         ,*  ,100       ,50        
 		MassG18Mag                              ,*  ,500       ,100       
 		Mag_CZ75_15Rnd                          ,*  ,300       ,50        
 		Mag_FNX45_15Rnd                         ,*  ,300       ,50        
-		P226_mag                                ,*  ,300       ,50        
-		Mag_Mk22_14Rnd                          ,*  ,300       ,50        
-		Mag_APS_20Rnd                           ,*  ,300       ,50        
-		A2M9_Magazine                           ,*  ,300       ,50        
-		Mag_M9_15rnd                            ,*  ,300       ,50        
+		P226_mag                                ,*  ,1         ,1         
+		Mag_Mk22_14Rnd                          ,*  ,1         ,1         
+		Mag_APS_20Rnd                           ,*  ,1         ,50        
+		A2M9_Magazine                           ,*  ,1         ,1         
+		Mag_M9_15rnd                            ,*  ,1         ,1         
 		Mag_1911_7rnd                           ,*  ,200       ,50        
 		Mag_DesertEagle_9rnd                    ,*  ,700       ,200       
 		
 		#x9                                     ,W  ,-1        ,-1        
 		Shotguns                                ,W  ,-1        ,-1        
-		A2AA12_Magazine                         ,*  ,800       ,300       
+		A2AA12_Magazine                         ,*  ,1         ,1         
 		Mag_Saiga_8Rnd                          ,*  ,400       ,100       
-		Mag_Saiga_Drum20Rnd                     ,*  ,800       ,100       
+		Mag_Saiga_Drum20Rnd                     ,*  ,1         ,1         
 		
 		#x9                                     ,W  ,-1        ,-1        
 		Submachine Guns                         ,W  ,-1        ,-1        
 		Mag_CZ61_20Rnd                          ,*  ,300       ,100       
-		Mag_UMP_25Rnd                           ,*  ,300       ,100       
+		Mag_UMP_25Rnd                           ,*  ,1         ,1         
 		Mag_MP5_30Rnd                           ,*  ,300       ,100       
-		Mag_MP7_40Rnd                           ,*  ,400       ,100       
+		Mag_MP7_40Rnd                           ,*  ,1         ,1         
 		Mag_Vityaz_30Rnd                        ,*  ,300       ,100       
-		bizon_magazine                          ,*  ,300       ,100       
+		bizon_magazine                          ,*  ,1         ,1         
 		Massppshbox                             ,W  ,300       ,100       
 		Massppshdrum                            ,W  ,400       ,200       
 		Mag_MP5_30Rnd                           ,*  ,300       ,100       
@@ -690,19 +690,19 @@
 		Mag_HoneyBadger_30rnd                   ,*  ,600       ,200       
 		Mass9x39Palm                            ,W  ,500       ,200       
 		
-		Mag_AKM_30RND                           ,*  ,600       ,200       
+		Mag_AKM_30RND                           ,*  ,1         ,1         
 		Mag_AKM_Drum75RND                       ,*  ,1200      ,400       
-		Mag_AK74_30RND                          ,*  ,400       ,200       
+		Mag_AK74_30RND                          ,*  ,1         ,1         
 		Mag_AK101_30RND                         ,*  ,400       ,200       
-		Mag_STG44_30rnd                         ,*  ,400       ,100       
+		Mag_STG44_30rnd                         ,*  ,1         ,1         
 		
 		
 		#x9                                     ,W  ,-1        ,-1        
 		Lightmachine Guns                       ,W  ,-1        ,-1        
 		RPK_magazine                            ,*  ,1000      ,400       
 		m240_magazine                           ,*  ,3000      ,1000      
-		A2MK48_Magazine                         ,*  ,2000      ,1000      
-		A2M249_Magazine                         ,*  ,1500      ,500       
+		A2MK48_Magazine                         ,*  ,1         ,1         
+		A2M249_Magazine                         ,*  ,1         ,1         
 		A2PKM_Magazine                          ,*  ,2200      ,1000      
 		
 		
@@ -710,18 +710,18 @@
 		#x9                                     ,W  ,-1        ,-1        
 		Rifles                                  ,W  ,-1        ,-1        
 		Mag_CZ527_5rnd                          ,*  ,200       ,30        
-		Mag_M14_10Rnd                           ,*  ,500       ,200       
+		Mag_M14_10Rnd                           ,*  ,1         ,1         
 		Mag_M14_20Rnd                           ,*  ,700       ,200       
-		A2M14_DMRMAG                            ,*  ,600       ,200       
+		A2M14_DMRMAG                            ,*  ,1         ,1         
 		
 		#x9                                     ,W  ,-1        ,-1        
 		Snipers                                 ,W  ,-1        ,-1        
-		Mag_VSS_10Rnd                           ,*  ,300       ,200       
-		Mag_SVD_10RND                           ,*  ,400       ,100       
-		Barret_Magazine                         ,*  ,2000      ,400       
-		m200_Magazine                           ,*  ,2000      ,400       
-		Mag_AWMreal_5Rnd                        ,*  ,1200      ,300       
-		A2AS50_Magazine                         ,*  ,1500      ,300       
+		Mag_VSS_10Rnd                           ,*  ,1         ,1         
+		Mag_SVD_10RND                           ,*  ,1         ,1         
+		Barret_Magazine                         ,*  ,1         ,1         
+		m200_Magazine                           ,*  ,1         ,1         
+		Mag_AWMreal_5Rnd                        ,*  ,1         ,1         
+		A2AS50_Magazine                         ,*  ,1         ,1         
 		A2M107_Magazine                         ,*  ,2000      ,400       
 		A2M40A3_Magazine                        ,*  ,1000      ,300       
 		//A2LRRAWM_Magazine,          *,      1000,     1000
@@ -2000,7 +2000,7 @@
 <Trader> BM Gun Trader
 	<Category> Shotguns and Pistols
 		A2AA12                                  ,W  ,10000     ,3000      
-		A2AA12_Magazine                         ,M  ,500       ,300       
+		A2AA12_Magazine                         ,M  ,1         ,1         
 		Ammo_12gaPellets                        ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
@@ -2045,12 +2045,12 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2MK48                                  ,W  ,20000     ,10000     
-		A2MK48_Magazine                         ,M  ,1200      ,600       
+		A2MK48_Magazine                         ,M  ,1         ,1         
 		Ammo_762x54                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2M249                                  ,W  ,17000     ,8000      
-		A2M249_Magazine                         ,M  ,1000      ,500       
+		A2M249_Magazine                         ,M  ,1         ,1         
 		Ammo_556x45                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -2068,30 +2068,30 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M14                                     ,W  ,10000     ,3000      
-		Mag_M14_10Rnd                           ,W  ,350       ,100       
+		Mag_M14_10Rnd                           ,W  ,1         ,1         
 		Mag_M14_20Rnd                           ,M  ,500       ,200       
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2M14_DMR                               ,W  ,10000     ,3000      
-		A2M14_DMRMAG                            ,M  ,500       ,250       
+		A2M14_DMRMAG                            ,M  ,1         ,1         
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M1A                                     ,W  ,10000     ,3000      
-		Mag_M14_10Rnd                           ,W  ,350       ,100       
-		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Mag_M14_10Rnd                           ,W  ,1         ,1         
+		Mag_M14_20Rnd                           ,M  ,1         ,1         
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 	
 		SVD                                     ,W  ,5000      ,1500      
 		WinterGear_SVD                          ,W  ,5000      ,1500      
-		Mag_SVD_10RND                           ,M  ,300       ,100       
+		Mag_SVD_10RND                           ,M  ,1         ,1         
 		Ammo_762x54                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		VSS                                     ,W  ,8000      ,3000      
-		Mag_VSS_10Rnd                           ,M  ,400       ,200       
+		Mag_VSS_10Rnd                           ,M  ,1         ,1         
 		Ammo_9x39                               ,1  ,-1        ,-1        
 		Ammo_9x39AP                             ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
@@ -2099,17 +2099,17 @@
 		Barret                                  ,W  ,25000     ,10000     
 		Barret_Green                            ,W  ,25000     ,10000     
 		Barret_Tan                              ,W  ,25000     ,10000     
-		Barret_Magazine                         ,M  ,1000      ,500       
+		Barret_Magazine                         ,M  ,1         ,1         
 		Ammo_50Cal                              ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M200                                    ,W  ,25000     ,10000     
-		m200_Magazine                           ,M  ,1000      ,500       
+		m200_Magazine                           ,M  ,1         ,1         
 		Ammo_408                                ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		AWMreal                                 ,W  ,25000     ,10000     
-		Mag_AWMreal_5Rnd                        ,M  ,1000      ,500       
+		Mag_AWMreal_5Rnd                        ,M  ,1         ,1         
 		Ammo_338                                ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -2120,7 +2120,7 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2AS50                                  ,W  ,27000     ,12000     
-		A2AS50_Magazine                         ,M  ,1000      ,500       
+		A2AS50_Magazine                         ,M  ,1         ,1         
 		Ammo_50Cal                              ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -2233,7 +2233,7 @@
 
 		<Category> Shotguns and Pistols
 		A2AA12                                  ,W  ,-1        ,3000      
-		A2AA12_Magazine                         ,M  ,500       ,300       
+		A2AA12_Magazine                         ,M  ,1         ,1         
 		Ammo_12gaPellets                        ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 
@@ -2277,12 +2277,12 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2MK48                                  ,W  ,-1        ,10000     
-		A2MK48_Magazine                         ,M  ,1200      ,600       
+		A2MK48_Magazine                         ,M  ,1         ,1         
 		Ammo_762x54                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2M249                                  ,W  ,-1        ,8000      
-		A2M249_Magazine                         ,M  ,1000      ,500       
+		A2M249_Magazine                         ,M  ,1         ,1         
 		Ammo_556x45                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -2300,30 +2300,30 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M14                                     ,W  ,-1        ,3000      
-		Mag_M14_10Rnd                           ,W  ,350       ,100       
-		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Mag_M14_10Rnd                           ,W  ,1         ,1         
+		Mag_M14_20Rnd                           ,M  ,500       ,1         
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2M14_DMR                               ,W  ,-1        ,3000      
-		A2M14_DMRMAG                            ,M  ,500       ,250       
+		A2M14_DMRMAG                            ,M  ,1         ,1         
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M1A                                     ,W  ,-1        ,3000      
-		Mag_M14_10Rnd                           ,W  ,350       ,100       
-		Mag_M14_20Rnd                           ,M  ,500       ,200       
+		Mag_M14_10Rnd                           ,W  ,1         ,1         
+		Mag_M14_20Rnd                           ,M  ,500       ,1         
 		Ammo_308Win                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 	
 		SVD                                     ,W  ,-1        ,1500      
 		WinterGear_SVD                          ,W  ,-1        ,1500      
-		Mag_SVD_10RND                           ,M  ,300       ,100       
+		Mag_SVD_10RND                           ,M  ,1         ,1         
 		Ammo_762x54                             ,*  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		VSS                                     ,W  ,-1        ,3000      
-		Mag_VSS_10Rnd                           ,M  ,400       ,200       
+		Mag_VSS_10Rnd                           ,M  ,1         ,1         
 		Ammo_9x39                               ,1  ,-1        ,-1        
 		Ammo_9x39AP                             ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
@@ -2331,17 +2331,17 @@
 		Barret                                  ,W  ,-1        ,10000     
 		Barret_Green                            ,W  ,-1        ,10000     
 		Barret_Tan                              ,W  ,-1        ,10000     
-		Barret_Magazine                         ,M  ,1000      ,500       
+		Barret_Magazine                         ,M  ,1         ,1         
 		Ammo_50Cal                              ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		M200                                    ,W  ,-1        ,10000     
-		m200_Magazine                           ,M  ,1000      ,500       
+		m200_Magazine                           ,M  ,1         ,1         
 		Ammo_408                                ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
 		AWMreal                                 ,W  ,-1        ,10000     
-		Mag_AWMreal_5Rnd                        ,M  ,1000      ,500       
+		Mag_AWMreal_5Rnd                        ,M  ,1         ,1         
 		Ammo_338                                ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		
@@ -2352,7 +2352,7 @@
 		#x9                                     ,W  ,-1        ,-1        
 		
 		A2AS50                                  ,W  ,-1        ,12000     
-		A2AS50_Magazine                         ,M  ,1000      ,500       
+		A2AS50_Magazine                         ,M  ,1         ,1         
 		Ammo_50Cal                              ,1  ,-1        ,-1        
 		#x9                                     ,W  ,-1        ,-1        
 		

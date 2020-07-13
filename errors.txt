@@ -1,11 +1,5 @@
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: Mag_MKII_10Rnd 
-
-        Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  200   | Sell Price =   50  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Mag_IJ70_8Rnd 
 
         Weapon Trader          |            Pistols             | Buy Price =  150   | Sell Price =   50  
@@ -31,34 +25,10 @@
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: P226_mag 
-
-        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_Mk22_14Rnd 
-
-        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Mag_APS_20Rnd 
 
-        Weapon Trader          |            Pistols             | Buy Price =  200   | Sell Price =   50  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: A2M9_Magazine 
-
-        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_M9_15rnd 
-
-        Weapon Trader          |            Pistols             | Buy Price =  250   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =   50  
+        Weapon Trader          |            Pistols             | Buy Price =  200   | Sell Price =   1   
+     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =   1    | Sell Price =   50  
 -----------------------------------------------------------------------------------------------------------
 
 [!] Inconsistent Price Error: Mag_Saiga_8Rnd 
@@ -67,19 +37,7 @@
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: Mag_Saiga_Drum20Rnd 
-
-        Weapon Trader          |            Shotguns            | Buy Price =  600   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  800   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Mag_CZ61_20Rnd 
-
-        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_UMP_25Rnd 
 
         Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
@@ -93,19 +51,7 @@
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: Mag_MP7_40Rnd 
-
-        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Mag_Vityaz_30Rnd 
-
-        Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: bizon_magazine 
 
         Weapon Trader          |        Submachine Guns         | Buy Price =  200   | Sell Price =  100  
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  100  
@@ -145,30 +91,6 @@
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: Mag_AKM_30RND 
-
-        Weapon Trader          |      Nato Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  400   | Sell Price =  200  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_STG44_30rnd 
-
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_AK74_30RND 
-
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
-        Weapon Trader          |      DDSV Assault Rifles       | Buy Price =  300   | Sell Price =  100  
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  200  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Scout556mag 
 
         Weapon Trader          |             Rifles             | Buy Price =  100   | Sell Price =   50  
@@ -186,13 +108,6 @@
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  700   | Sell Price =  200  
         BM Gun Trader          |      Shotguns and Pistols      | Buy Price =  400   | Sell Price =  100  
       Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =  400   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: A2AA12_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  800   | Sell Price =  300  
-        BM Gun Trader          |      Shotguns and Pistols      | Buy Price =  500   | Sell Price =  300  
-      Blackmarket Dealer       |      Shotguns and Pistols      | Buy Price =  500   | Sell Price =  300  
 -----------------------------------------------------------------------------------------------------------
 
 [!] Inconsistent Price Error: Mag_FAL_20Rnd 
@@ -230,20 +145,6 @@
       Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1300  | Sell Price =  1000 
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: A2MK48_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  1000 
-        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1200  | Sell Price =  600  
-      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1200  | Sell Price =  600  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: A2M249_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1500  | Sell Price =  500  
-        BM Gun Trader          |       Light Machine Guns       | Buy Price =  1000  | Sell Price =  500  
-      Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1000  | Sell Price =  500  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: A2PKM_Magazine 
 
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2200  | Sell Price =  1000 
@@ -251,71 +152,13 @@
       Blackmarket Dealer       |       Light Machine Guns       | Buy Price =  1700  | Sell Price =  1000 
 -----------------------------------------------------------------------------------------------------------
 
-[!] Inconsistent Price Error: Mag_M14_10Rnd 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  500   | Sell Price =  200  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  350   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
 [!] Inconsistent Price Error: Mag_M14_20Rnd 
 
      Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  700   | Sell Price =  200  
         BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  200  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: A2M14_DMRMAG 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  600   | Sell Price =  200  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =  250  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_VSS_10Rnd 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  300   | Sell Price =  200  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  400   | Sell Price =  200  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  400   | Sell Price =  200  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_SVD_10RND 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  400   | Sell Price =  100  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  300   | Sell Price =  100  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  300   | Sell Price =  100  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Barret_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: m200_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  2000  | Sell Price =  400  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: Mag_AWMreal_5Rnd 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1200  | Sell Price =  300  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
------------------------------------------------------------------------------------------------------------
-
-[!] Inconsistent Price Error: A2AS50_Magazine 
-
-     Ammo and Attachments      |      Prefilled Magazines       | Buy Price =  1500  | Sell Price =  300  
-        BM Gun Trader          |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
-      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  1000  | Sell Price =  500  
+        BM Gun Trader          |         Sniper Rifles          | Buy Price =   1    | Sell Price =   1   
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =   1   
+      Blackmarket Dealer       |         Sniper Rifles          | Buy Price =  500   | Sell Price =   1   
 -----------------------------------------------------------------------------------------------------------
 
 [!] Inconsistent Price Error: A2M107_Magazine 
