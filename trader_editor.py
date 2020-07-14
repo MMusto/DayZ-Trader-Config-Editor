@@ -249,10 +249,10 @@ class trader_editor:
 
     def run(self):
     
+        self.set_color('0A')
         choice = self.get_choice()
         while choice not in ('5', 'quit', 'exit', 'q'):
             os.system("cls")
-            self.set_color('0A')
             self.parse(TRADER_FILENAME)
             
             if choice == '1':
@@ -263,13 +263,13 @@ class trader_editor:
                 os.system("cls")
                 print("\nSuccessfully adjusted items.")
             elif choice == '3':
-                if not self.get_item_details(input("Please enter the item name you are looking for: ")):
+                if not self.get_item_details(input("Please enter the item name you are looking for (Has to be exact item classname): ")):
                     print("\nSorry, that item was not found.")
                 else:
                     os.system("cls")
                     print("\n[INFO] Success.")
             elif choice == '4':
-                if not self.modify_item(input("Please enter the item name you want to modify: ")):
+                if not self.modify_item(input("Please enter the item name you want to modify: (Has to be exact item classname)")):
                     print("\nSorry, that item was not found.")
                 else:
                     os.system("cls")
