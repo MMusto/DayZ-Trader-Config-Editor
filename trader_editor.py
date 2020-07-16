@@ -3,6 +3,7 @@ import os
 
 TRADER_FILENAME = "trader.txt"
 ERRORS_FILENAME = "errors.txt"
+LOGO_FILE = "ascii_logo.txt"
 
 os.system("mode con: cols=150 lines=55")
 os.system("cls")
@@ -10,7 +11,7 @@ os.system("TITLE STS Trader Editor")
 
 class trader_editor:
     def __init__(self):
-        self.set_color('0A')
+        self._set_color('0A')
         self.editted_file = dict()
         self.items = defaultdict(int)
         self.buy_costs = defaultdict(list)
@@ -20,10 +21,10 @@ class trader_editor:
         self.price_errors = []
     
         
-    def set_color(self, color):
+    def _set_color(self, color):
         os.system('color {}'.format(color))
         
-    def all_same(self, l):
+    def _all_same(self, l):
         if len(l) == 0:
             return True
         s = l[0][0]
@@ -32,7 +33,7 @@ class trader_editor:
                 return False
         return True
     
-    def yes(self, string):
+    def _yes(self, string):
         if string.lower() in ("", "y","yes","yeah","yea"):
             return True
         return False
@@ -92,7 +93,7 @@ class trader_editor:
                 if count > 1:
                     buy_prices = self.buy_costs[item_name]
                     sell_prices = self.sell_costs[item_name]
-                    if not (self.all_same(buy_prices) and self.all_same(sell_prices)):          
+                    if not (self._all_same(buy_prices) and self._all_same(sell_prices)):          
                         print("-----------------------------------------------------------------------------------------------------------\n", file = output)
                         print("[!] Inconsistent Price Error: {} \n".format(item_name), file = output)
                         for buys, sells in zip(buy_prices, sell_prices):
@@ -131,7 +132,7 @@ class trader_editor:
             if count > 1:
                 buy_prices = self.buy_costs[item_name]
                 sell_prices = self.sell_costs[item_name]
-                if not (self.all_same(buy_prices) and self.all_same(sell_prices)):
+                if not (self._all_same(buy_prices) and self._all_same(sell_prices)):
                     print("-----------------------------------------------------------------------------------------------------------\n")
                     print("\n [!] Inconsistent Price Error: {} \n".format(item_name))
                     for buys, sells in zip(buy_prices, sell_prices):
@@ -141,7 +142,7 @@ class trader_editor:
                         sell_price = sells[0]
                         c_trader, c_category = self.trader_category[line_n]
                         print("{0:<30} | {1:<30} | Buy Price = {2:<6} | Sell Price = {3:<6}".format(c_trader, c_category, buy_price, sell_price))
-                    if(self.yes(input("\n\nWould you like to modify ALL buy and sell prices AT ONCE (set all item ocurrences buy/sell prices to be the same)? [Y/n]"))):
+                    if(self._yes(input("\n\nWould you like to modify ALL buy and sell prices AT ONCE (set all item ocurrences buy/sell prices to be the same)? [Y/n]"))):
                         new_buy_val = None
                         new_sell_val = None
                         while not new_buy_val:
@@ -153,7 +154,7 @@ class trader_editor:
                                 assert(buys[1] == sells[1])
                             line_n = buys[1]
                             self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
-                    elif(self.yes(input("\n\nWould you like to modify EACH buy and sell price INDIVIDUALLY? [Y/n]"))):
+                    elif(self._yes(input("\n\nWould you like to modify EACH buy and sell price INDIVIDUALLY? [Y/n]"))):
                         for buys, sells in zip(buy_prices, sell_prices):
                             assert(buys[1] == sells[1])
                             line_n = buys[1]
@@ -170,7 +171,7 @@ class trader_editor:
                                 new_sell_val = sell_price
                             self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
                     cont = input("\nSave Progress? [Y/n/quit]")
-                    if(self.yes(cont)):
+                    if(self._yes(cont)):
                         self.write_output()
                     elif cont.lower() in ("q","quit", "exit"):
                         break
@@ -193,7 +194,7 @@ class trader_editor:
             
             print("{0:^30} | {1:^30} | Capacity = {2:^2} | Buy Price = {3:^6} | Sell Price = {4:^6} | (Line: {5:^6}".format(c_trader, c_category, capacity, buy_price, sell_price, str(line_n) + ')'))
             
-        if self.yes(input("\nWould you like to modify {}'s details? [Y/n]".format(item_name))):
+        if self._yes(input("\nWould you like to modify {}'s details? [Y/n]".format(item_name))):
             self.modify_item(item_name)
             
         return True
@@ -235,7 +236,7 @@ class trader_editor:
         return True
                     
 
-    def get_choice(self):
+    def _get_choice(self):
         print(f"\n[1] Generate Error Report ('{ERRORS_FILENAME}')\n[2] Correct All Errors\n[3] View Item Details\n[4] Modify Item Details\n[5] Quit\n")
         choice = input("What would you like to do?")
         if choice.lower() in ('1', '2', '3','4', '5', 'quit', 'exit', 'q'):
@@ -243,13 +244,13 @@ class trader_editor:
         else:
             os.system("cls")
             print("\nSorry, that choice wasn't recognized. Please try again.")
-            return self.get_choice()
+            return self._get_choice()
 
 
     def run(self):
     
-        self.set_color('0A')
-        choice = self.get_choice()
+        self._set_color('0A')
+        choice = self._get_choice()
         while choice not in ('5', 'quit', 'exit', 'q'):
             os.system("cls")
             self.parse(TRADER_FILENAME)
@@ -273,63 +274,14 @@ class trader_editor:
                 else:
                     os.system("cls")
                     print("\n[INFO] Success.")
-            choice = self.get_choice()
+            choice = self._get_choice()
         os.system("cls")
-        self.set_color('09')
-        print("""MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMNOxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxONMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMk'.'''''''''''''''''''''''''''''''''''''''..xWMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMWx'',,,,,,,,,'''''',,,,,,,,,'''''',,,,,,,,,'.oWMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMWo.,,,,,'..,:ccccc'.,,,,,,,.'clccc:,'.',,,;'.lNMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMNl.,,,,.'lOXWWMMMNl.,,,,,,'.lNMMMWWXOo'.,,,,.cNMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMNc.,,,.,kWMMMMMMMNl.,,,,,,'.lNMMMMMMMWO,.,,,.:XMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMX:.,,..xWMMMMMMMMNl.,,,,,,'.lNMMMMMMMMWk'.,,.;KMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMWNK0OkxxxxkO0Kk,.,'.:XMMMMMMMMMNl.,,,,,,'.lNMMMMMMMMMXc.,,.,kK0Okxxxxxk0KXWMMMMMMMMMMMMM
-        MMMMMMMMWKxoc:;,'''''''',,,.....:KWMMMMMMMMNl.,,,,,,'.lNMMMMMMMMMXc.....',,''''''.'',;:ldONMMMMMMMMM
-        MMMMMWXxc,'',;,,,'''',,,,,;;,,'..cNMMMWKOkkkl;;,''','.lNMMMMMMMMWx..',,,,,;,,,'''',,,,,'.';o0WMMMMMM
-        MMMMNx;',,;,'.',;:ccc:;'.',,,,,,.:XMXOxxk0KXXXKOxool,.cNMMMMMMMMWo.',,,,,'.',;:ccc:,'.',,,'.'oXMMMMM
-        MMMNo'';,,,.'lOXNWWWWWNKx:.',,,,.;OkdkXWWWWWWWWWWWWWKd:lONMMMMMMWo.',,,'.,o0XNWWWWWX0d,.',,,'.:KMMMM
-        MMWd'',,,,..xWMMMMMMMMMMMNd'.,,,..;:lkKWWWWWWWWWWWWMW0dollOWMMMMNl.,,,'.cKMMMMMMMMMMMMO,.,,,,'.cNMMM
-        MMX:.,,,,,.'kMMMMMMMMMMMMMNo.',,.'xK0O0XWWWWWNKKXWWWWWWWNocKMMMMNc.,,'.:KMMMMMMMMMMMMMK;.,,,,,.'OMMM
-        MMK;.,,,,,'.;kXWMMMMMMMMMMM0,.,,'oNWWWWWWWWNK00XNWWWWWWWWk:kMMMMNc.,,..xWMMMWNWWMMMMN0c'',,,,,..kMMM
-        MMX:.,,,,,,,'';ldOKNWMMMMMMNl....lKNNNNXK000KNWWWNNNNWNNNKcoNMMMNl....;0MWKxlccldkxl:,',,,,,,,.'OMMM
-        MMWx..,,,,,,,,,''',:coxOXNMMXOkkdc;,;:ldkOKKKKKOkkxk0XXXNNx;xWMMMXOkkkKN0o:;;,''...',,,,,,,,,'.lNMMM
-        MMMNd'.,,,,,,,,,,,,,,''';:lxOXWXo;,,:cclodddddoolllloxkOOOd;;oONMMMMMN0o;,,;,,',..,,,,,,,,,,..cKMMMM
-        MMMMWO:'.',,,,,,,,,,,,,;,,''';lo;,;;:ldkoclcccoddoollllllllc;',oKMNOoc;,,,;;,'''',,,,,,,,,..;xNMMMMM
-        MMMMMMNOo;'..',,,,,,,,,,,,,,,,'...,,;:clccll::okOdl::ccolccccc;,xkc,',;;,,,''',,,,,,,,'..,ckXMMMMMMM
-        MMMWNNNWWN0xl:,'..',,,,,,,,,,,,,..';cccclolcllcccccccccl:clllc;c:..,,',,'..',,,,''..';cdOXWWNNNWMMMM
-        MMKl::::xWMMMWXOxlc;'..',,,,,,,,,'';clllolcclccloodolclc,,''',;'.:xxc,,'..''...,:ldkKNWMMWOc;:;cOMMM
-        MMk'.,,.;KMMMMMMMMWN0koc,.',,,,,,'.,,;:ccc;lxocloollllc:cll:;;''cO0Xk,....':lxOXWMMMMMMMMNl.',..dWMM
-        MMO'.,,.'kMMMMMMMMMMMMMWXd'.,,,,,.''..;lcc;;lolclccccclllolllolcllc:'.'..c0WMMMMMMMMMMMMMK;.,,..xMMM
-        MM0,.,,'.cNMMMMMMMMMMMMMMWo.,,,,,'...........',;,,;;:llllc:cllcclll'.',.:XMMMMMMMMMMMMMMWd.',,..xMMM
-        MMK;.,,,'.oNMMMMMMMMMMMMMXc.,,,,,'. ...........'..;:lloolc:loocclllc'.'.,0MMMMMMMMMMMMMWk,.,,,..kMMM
-        MMK;.,,,,'.:xKWWMMMMMMWXkc'',,,,'....,c'..........;clllol:cooc:cllll;.''.;xKNWMMMMMMWXOl'',,,,.'OMMM
-        MMK:.,,,,,,'';clloooolc;'',,,,'.'okc.,;..........;ccccclccc:;,;lllll:.',,'.,:clloollc;'',,,,,,.'OMMM
-        MMXc..'',,,,,,,,,''',,,,,,'..';dKN0l,''..''''',;:clllllcc:::::clllll;...',,,,,''''',,,,,,,,''..;0MMM
-        MMWXkdl:;,'''..........'',:lx0NMNd;;::cl;...;:;coooooooc:::;;:clllll,:do:;,'...........'',;:coxKWMMM
-        MMMMMMMWNXK0OkdddddddxkOKXWMMMMKo;:llc:,..':'..dX0kxoolc::::ccllccll:;xNWNK0kxdddodddxk0KXNWMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOc;clllc;....:lod0WWWNKOd:clccloooodxOO:oNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMWO;;:cllccc;;lkKNWXKNWWMNOllld0KKKKXXNWWO;lNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMKl;:cl;,;cld0WWWWNkkXWWOllcl0WWXKNWWWWNd,,kWMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0c;cc:::xNNNXkdkxxdxkdc:lccxNN00WWWWXdc;,xWMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkl,.';:;dNWWOcxNWWWOl;,cll::oodxkOXXl':dONMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMNxcokOx:;coxKNWKokMMWk:',cllc,;;;xKKKKo.;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMk:kWWWWKxoONXXNNxlkXO;,cccll:;,,,ckXNNO;,kWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMWxc0WWWWWN00NWWWWN0coOo;;;:ccccclocoKWN0l.:KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMKddKWWWWWWWWWWWWWXllNW0ko;:dxxk0NNXKKNNO:oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMNOxxkkkkkkkxxkkkxdKWMMM0:oNWNWWWWWNKXNx:kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWX0OkkkO0KXXXNNWMMMMMXldNWWWWWWWWWXxcxNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKxdOKNNNNKOxoo0WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOkkkkxddkKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWWWWWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM""")
+        self._set_color('09')
+        with open(LOGO_FILE) as logo:
+            print(logo.read())
         print("{0:^100}".format("Thanks for using Eden's Trader Editor."))
         print("{0:^100}".format("If you can any questions, feel free to join our Discord:"))
         print("{0:^100}".format("https://discord.gg/a2SZD3D"))
-        self.set_color('')
         os.system("pause")
 
 if __name__ == "__main__":
