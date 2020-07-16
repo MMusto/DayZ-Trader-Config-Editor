@@ -1,7 +1,6 @@
 from collections import defaultdict
 import os
 
-
 TRADER_FILENAME = "trader.txt"
 ERRORS_FILENAME = "errors.txt"
 
