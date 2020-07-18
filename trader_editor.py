@@ -250,6 +250,7 @@ class trader_editor:
     def run(self):
     
         self._set_color('0A')
+        
         choice = self._get_choice()
         while choice not in ('5', 'quit', 'exit', 'q'):
             os.system("cls")
