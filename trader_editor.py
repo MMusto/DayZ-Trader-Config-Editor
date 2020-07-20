@@ -11,7 +11,7 @@ os.system("TITLE STS Trader Editor")
 
 class trader_editor:
     def __init__(self):
-        self._set_color('0A')
+        self.set_color('0A')
         self.editted_file = dict()
         self.items = defaultdict(int)
         self.buy_costs = defaultdict(list)
@@ -20,11 +20,12 @@ class trader_editor:
         self.line_num = 0
         self.price_errors = []
     
-        
-    def _set_color(self, color):
+    @staticmethod    
+    def set_color(color):
         os.system('color {}'.format(color))
-        
-    def _all_same(self, l):
+    
+    @staticmethod     
+    def all_same(l):
         if len(l) == 0:
             return True
         s = l[0][0]
@@ -32,8 +33,9 @@ class trader_editor:
             if c[0] != s:
                 return False
         return True
-    
-    def _yes(self, string):
+        
+    @staticmethod
+    def yes(string):
         if string.lower() in ("", "y","yes","yeah","yea"):
             return True
         return False
@@ -93,7 +95,7 @@ class trader_editor:
                 if count > 1:
                     buy_prices = self.buy_costs[item_name]
                     sell_prices = self.sell_costs[item_name]
-                    if not (self._all_same(buy_prices) and self._all_same(sell_prices)):          
+                    if not (self.all_same(buy_prices) and self.all_same(sell_prices)):          
                         print("-----------------------------------------------------------------------------------------------------------\n", file = output)
                         print("[!] Inconsistent Price Error: {} \n".format(item_name), file = output)
                         for buys, sells in zip(buy_prices, sell_prices):
@@ -132,7 +134,7 @@ class trader_editor:
             if count > 1:
                 buy_prices = self.buy_costs[item_name]
                 sell_prices = self.sell_costs[item_name]
-                if not (self._all_same(buy_prices) and self._all_same(sell_prices)):
+                if not (self.all_same(buy_prices) and self.all_same(sell_prices)):
                     print("-----------------------------------------------------------------------------------------------------------\n")
                     print("\n [!] Inconsistent Price Error: {} \n".format(item_name))
                     for buys, sells in zip(buy_prices, sell_prices):
@@ -142,7 +144,7 @@ class trader_editor:
                         sell_price = sells[0]
                         c_trader, c_category = self.trader_category[line_n]
                         print("{0:<30} | {1:<30} | Buy Price = {2:<6} | Sell Price = {3:<6}".format(c_trader, c_category, buy_price, sell_price))
-                    if(self._yes(input("\n\nWould you like to modify ALL buy and sell prices AT ONCE (set all item ocurrences buy/sell prices to be the same)? [Y/n]"))):
+                    if(self.yes(input("\n\nWould you like to modify ALL buy and sell prices AT ONCE (set all item ocurrences buy/sell prices to be the same)? [Y/n]"))):
                         new_buy_val = None
                         new_sell_val = None
                         while not new_buy_val:
@@ -154,7 +156,7 @@ class trader_editor:
                                 assert(buys[1] == sells[1])
                             line_n = buys[1]
                             self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
-                    elif(self._yes(input("\n\nWould you like to modify EACH buy and sell price INDIVIDUALLY? [Y/n]"))):
+                    elif(self.yes(input("\n\nWould you like to modify EACH buy and sell price INDIVIDUALLY? [Y/n]"))):
                         for buys, sells in zip(buy_prices, sell_prices):
                             assert(buys[1] == sells[1])
                             line_n = buys[1]
@@ -171,7 +173,7 @@ class trader_editor:
                                 new_sell_val = sell_price
                             self.editted_file[line_n] = (item_name, self.editted_file[line_n][1], new_buy_val, new_sell_val)
                     cont = input("\nSave Progress? [Y/n/quit]")
-                    if(self._yes(cont)):
+                    if(self.yes(cont)):
                         self.write_output()
                     elif cont.lower() in ("q","quit", "exit"):
                         break
@@ -194,7 +196,7 @@ class trader_editor:
             
             print("{0:^30} | {1:^30} | Capacity = {2:^2} | Buy Price = {3:^6} | Sell Price = {4:^6} | (Line: {5:^6}".format(c_trader, c_category, capacity, buy_price, sell_price, str(line_n) + ')'))
             
-        if self._yes(input("\nWould you like to modify {}'s details? [Y/n]".format(item_name))):
+        if self.yes(input("\nWould you like to modify {}'s details? [Y/n]".format(item_name))):
             self.modify_item(item_name)
             
         return True
@@ -249,7 +251,7 @@ class trader_editor:
 
     def run(self):
     
-        self._set_color('0A')
+        self.set_color('0A')
         
         choice = self._get_choice()
         while choice not in ('5', 'quit', 'exit', 'q'):
@@ -277,7 +279,7 @@ class trader_editor:
                     print("\n[INFO] Success.")
             choice = self._get_choice()
         os.system("cls")
-        self._set_color('09')
+        self.set_color('09')
         with open(LOGO_FILE) as logo:
             print(logo.read())
         print("{0:^100}".format("Thanks for using Eden's Trader Editor."))
