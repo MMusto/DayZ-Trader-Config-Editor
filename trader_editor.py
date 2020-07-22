@@ -5,12 +5,11 @@ TRADER_FILENAME = "trader.txt"
 ERRORS_FILENAME = "errors.txt"
 LOGO_FILE = "ascii_logo.txt"
 
-os.system("mode con: cols=150 lines=55")
-os.system("cls")
-os.system("TITLE STS Trader Editor")
-
 class trader_editor:
     def __init__(self):
+        os.system("mode con: cols=150 lines=55")
+        os.system("cls")
+        os.system("TITLE STS Trader Editor")
         self.set_color('0A')
         self.editted_file = dict()
         self.items = defaultdict(int)
