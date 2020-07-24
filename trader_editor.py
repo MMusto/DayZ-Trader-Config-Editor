@@ -28,6 +28,7 @@ class trader_editor:
         if len(l) == 0:
             return True
         s = l[0][0]
+        #all([x == s for x in l]) ?
         for c in l:
             if c[0] != s:
                 return False
