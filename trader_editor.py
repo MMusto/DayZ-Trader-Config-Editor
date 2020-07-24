@@ -257,7 +257,6 @@ class trader_editor:
             os.system("cls")
             self.parse(TRADER_FILENAME)
             
-            
             #implement dict switch statement?
             if choice == '1':
                 self.write_errors(ERRORS_FILENAME)
